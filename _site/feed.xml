@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Adam Liska</title>
+    <description>Studying the nervous system</description>
+    <link>http://adliska.com/</link>
+    <atom:link href="http://adliska.com/feed.xml" rel="self" type="application/rss+xml" />
+    <pubDate>Sun, 01 Feb 2015 17:54:16 +0100</pubDate>
+    <lastBuildDate>Sun, 01 Feb 2015 17:54:16 +0100</lastBuildDate>
+    <generator>Jekyll v2.4.0</generator>
+    
+      <item>
+        <title>Working with the Allen Mouse Brain Reference Atlas</title>
+        <description>The Allen Brain Atlas portal is an entry point to a wealth of publicly available information on the structure, function, and development of the nervous system. In the following series of posts, I would like to introduce several of those resources and show how to work with them.</description>
+        <pubDate>Sun, 01 Feb 2015 00:00:00 +0100</pubDate>
+        <link>http://adliska.com/2015/02/01/working-with-the-allen-mouse-brain-reference-atlas.html</link>
+        <guid isPermaLink="true">http://adliska.com/2015/02/01/working-with-the-allen-mouse-brain-reference-atlas.html</guid>
+        
+        
+      </item>
+    
+  </channel>
+</rss>
