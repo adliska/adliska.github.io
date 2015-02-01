@@ -13,6 +13,6 @@ gems: ['jekyll/scholar']
 markdown: kramdown
 
 scholar:
-    bibliography: references.bib
+    bibliography: adliska.bib
     style: frontiers
     bibliography_template: mybiblio
