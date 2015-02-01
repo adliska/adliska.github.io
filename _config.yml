@@ -1,7 +1,7 @@
 # Site settings
 title: Adam Liska
 email: ""
-description: "..."
+description: "Studying the nervous system"
 baseurl: "" 
 url: "http://adliska.com"
 twitter_username: adliska
@@ -14,3 +14,5 @@ markdown: kramdown
 
 scholar:
     bibliography: adliska.bib
+    style: frontiers
+    bibliography_template: mybiblio
