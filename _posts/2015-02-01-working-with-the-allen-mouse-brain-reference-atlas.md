@@ -171,7 +171,7 @@ nib.save(f, outputpath)
 
 The resulting grayscale Nissl volume used in the Allen Mouse Brain Reference
 Atlas can be downloaded in the NIfTI format
-[here](/downloads/other/allen_mouse_brain_reference_atlas.nii.gz).
+[here](/downloads/other/allen_mouse_brain_reference_atlas.nii.gz) (29.9 MB).
 
 In the next post, we will work with structural annotations. You can follow the
 series by subscribing to the RSS feed below. If you have any comments,
