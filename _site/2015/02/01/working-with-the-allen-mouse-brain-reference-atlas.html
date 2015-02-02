@@ -142,7 +142,9 @@ of the atlas. </p>
 <a href="http://docs.scipy.org/doc/numpy/reference/generated/numpy.fromstring.html">numpy.fromstring</a>
 method:</p>
 
-<div class="highlight"><pre><code class="language-python" data-lang="python"><span class="n">volumepath</span> <span class="o">=</span> <span class="s">&#39;path/to/atlasVolume.raw&#39;</span>
+<div class="highlight"><pre><code class="language-python" data-lang="python"><span class="kn">import</span> <span class="nn">numpy</span> <span class="kn">as</span> <span class="nn">np</span>
+
+<span class="n">volumepath</span> <span class="o">=</span> <span class="s">&#39;path/to/atlasVolume.raw&#39;</span>
 <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="n">volumepath</span><span class="p">,</span> <span class="s">&quot;rb&quot;</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>
     <span class="n">volume</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">fromstring</span><span class="p">(</span><span class="n">f</span><span class="o">.</span><span class="n">read</span><span class="p">(),</span> <span class="n">dtype</span><span class="o">=</span><span class="s">&#39;uint8&#39;</span><span class="p">)</span></code></pre></div>
 

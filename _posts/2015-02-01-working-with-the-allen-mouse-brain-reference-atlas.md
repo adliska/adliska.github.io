@@ -87,6 +87,8 @@ To read the extracted binary file, we use the
 [numpy.fromstring](http://docs.scipy.org/doc/numpy/reference/generated/numpy.fromstring.html)
 method:
 {% highlight python %}
+import numpy as np
+
 volumepath = 'path/to/atlasVolume.raw'
 with open(volumepath, "rb") as f:
     volume = np.fromstring(f.read(), dtype='uint8')
