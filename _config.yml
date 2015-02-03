@@ -16,3 +16,4 @@ scholar:
     bibliography: adliska.bib
     style: frontiers
     bibliography_template: mybiblio
+    sort_by: name

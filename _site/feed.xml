@@ -5,9 +5,19 @@
     <description>Studying the nervous system</description>
     <link>http://adliska.com/</link>
     <atom:link href="http://adliska.com/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Mon, 02 Feb 2015 11:33:33 +0100</pubDate>
-    <lastBuildDate>Mon, 02 Feb 2015 11:33:33 +0100</lastBuildDate>
+    <pubDate>Tue, 03 Feb 2015 14:55:50 +0100</pubDate>
+    <lastBuildDate>Tue, 03 Feb 2015 14:55:50 +0100</lastBuildDate>
     <generator>Jekyll v2.4.0</generator>
+    
+      <item>
+        <title>A method to identify areas of brain dysconnectivity</title>
+        <description>Resting-state functional Magnetic Resonance Imaging (rs-fMRI) has become a popular tool to study brain disorders. There has been accumulating evidence showing association of various brain disorders, such as schizophrenia and autism, with brain dysconnectivity and, in general, with alterations in brain networks.  In this post, I would like to describe a common method used to identify areas of dysconnectivity in the brain, namely the global brain connectivity analysis.</description>
+        <pubDate>Tue, 03 Feb 2015 00:00:00 +0100</pubDate>
+        <link>http://adliska.com/2015/02/03/global-connectivity-analysis-intrinsic-connectivity-contrast.html</link>
+        <guid isPermaLink="true">http://adliska.com/2015/02/03/global-connectivity-analysis-intrinsic-connectivity-contrast.html</guid>
+        
+        
+      </item>
     
       <item>
         <title>Working with the Allen Mouse Brain Reference Atlas</title>
