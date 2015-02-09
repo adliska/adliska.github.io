@@ -5,9 +5,19 @@
     <description>Studying the nervous system</description>
     <link>http://adliska.com/</link>
     <atom:link href="http://adliska.com/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Tue, 03 Feb 2015 14:55:50 +0100</pubDate>
-    <lastBuildDate>Tue, 03 Feb 2015 14:55:50 +0100</lastBuildDate>
+    <pubDate>Mon, 09 Feb 2015 15:01:26 +0100</pubDate>
+    <lastBuildDate>Mon, 09 Feb 2015 15:01:26 +0100</lastBuildDate>
     <generator>Jekyll v2.4.0</generator>
+    
+      <item>
+        <title>Global brain connectivity analysis in AFNI</title>
+        <description>In the last post, I talked about the global brain connectivity analysis and its use in identifying areas of differing brain connectivity across two or more conditions. In this post, I show how to implement this method using the AFNI set of neuroimaging data analysis tools.</description>
+        <pubDate>Mon, 09 Feb 2015 00:00:00 +0100</pubDate>
+        <link>http://adliska.com/2015/02/09/global-brain-connectivity-analysis-in-afni.html</link>
+        <guid isPermaLink="true">http://adliska.com/2015/02/09/global-brain-connectivity-analysis-in-afni.html</guid>
+        
+        
+      </item>
     
       <item>
         <title>A method to identify areas of brain dysconnectivity</title>
