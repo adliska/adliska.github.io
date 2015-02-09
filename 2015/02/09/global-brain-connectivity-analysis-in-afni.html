@@ -144,7 +144,9 @@ using AFNI’s <a href="http://afni.nimh.nih.gov/pub/dist/doc/program_help/3dtte
     -prefix gbc_results.nii.gz</code></pre></div>
 
 <p>The output file, <code>gbc_results.nii.gz</code>, is composed of multiple “sub-bricks”,
-and it might be helpful to extract the two most important ones into separate files:</p>
+and it might be helpful to extract the two most important ones –
+the difference of group means and the associated <em>t</em>-statistics – into 
+separate files for further analysis:</p>
 
 <div class="highlight"><pre><code class="language-bash" data-lang="bash">3dcalc <span class="se">\</span>
     -a <span class="s2">&quot;gbc_results.nii.gz[0]&quot;</span> <span class="se">\</span>
@@ -155,9 +157,6 @@ and it might be helpful to extract the two most important ones into separate fil
     -a <span class="s2">&quot;gbc_results.nii.gz[1]&quot;</span> <span class="se">\</span>
     -expr <span class="s2">&quot;a&quot;</span> <span class="se">\</span>
     -prefix gbc_tstat.nii.gz</code></pre></div>
-
-<p>As the last step of the GBC analysis, the output statistical map
-should be subjected to multiple comparisons correction.</p>
 
 <h2 id="references">References</h2>
 
