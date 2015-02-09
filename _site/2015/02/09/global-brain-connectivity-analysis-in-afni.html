@@ -6,11 +6,11 @@
     <meta name="viewport" content="width=device-width">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-    <title>Research blog</title>
+    <title>Global brain connectivity analysis in AFNI</title>
     <meta name="description" content="Studying the nervous system">
 
     <link rel="stylesheet" href="/css/main.css">
-    <link rel="canonical" href="http://adliska.com/research-blog/">
+    <link rel="canonical" href="http://adliska.com/2015/02/09/global-brain-connectivity-analysis-in-afni.html">
 
     <script>
         (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
@@ -59,37 +59,135 @@
         <div class="post">
 
   <header class="post-header">
-    <h1 class="post-title">Research blog</h1>
+    <h1 class="post-title">Global brain connectivity analysis in AFNI</h1>
+    <p class="post-meta">Feb 9, 2015</p>
   </header>
 
   <article class="post-content">
-    <ul class="post-list">
-    
-        <li>
-            <span class="post-meta">Feb 9, 2015</span>
-            <h2>
-                <a class="post-link" href="/2015/02/09/global-brain-connectivity-analysis-in-afni.html">Global brain connectivity analysis in AFNI</a>
-            </h2>
-            In the last post, I talked about the global brain connectivity analysis and its use in identifying areas of differing brain connectivity across two or more conditions. In this post, I show how to implement this method using the AFNI set of neuroimaging data analysis tools.
-        </li>
-    
-        <li>
-            <span class="post-meta">Feb 3, 2015</span>
-            <h2>
-                <a class="post-link" href="/2015/02/03/global-connectivity-analysis-intrinsic-connectivity-contrast.html">A method to identify areas of brain dysconnectivity</a>
-            </h2>
-            Resting-state functional Magnetic Resonance Imaging (rs-fMRI) has become a popular tool to study brain disorders. There has been accumulating evidence showing association of various brain disorders, such as schizophrenia and autism, with brain dysconnectivity and, in general, with alterations in brain networks.  In this post, I would like to describe a common method used to identify areas of dysconnectivity in the brain, namely the global brain connectivity analysis.
-        </li>
-    
-        <li>
-            <span class="post-meta">Feb 1, 2015</span>
-            <h2>
-                <a class="post-link" href="/2015/02/01/working-with-the-allen-mouse-brain-reference-atlas.html">Working with the Allen Mouse Brain Reference Atlas</a>
-            </h2>
-            The Allen Brain Atlas portal is an entry point to a wealth of publicly available information on the structure, function, and development of the nervous system. In the following series of posts, I would like to introduce several of those resources and show how to work with them.
-        </li>
-    
+    <h2 id="introduction">Introduction</h2>
+<p>In the <a href="/2015/02/03/global-connectivity-analysis-intrinsic-connectivity-contrast.html">last post</a>,
+I talked about the global brain connectivity (GBC)
+analysis and its use in identifying areas of differing brain connectivity
+across two or more conditions <a href="#Cole:etal:2010">(Cole et al., 2010; Cole et al., 2011)</a>. 
+In this post, I show how to implement this method using the AFNI set of 
+neuroimaging data analysis tools 
+(<a href="http://afni.nimh.nih.gov/afni/">website</a>, 
+<a href="http://en.wikipedia.org/wiki/Analysis_of_Functional_NeuroImages">wiki</a>).</p>
+
+<p>As a quick reminder, the GBC analysis consists in: (1) computing 
+the GBC voxel maps for each subject, and (2) comparing these maps across
+groups. For more details, check out the <a href="/2015/02/03/global-connectivity-analysis-intrinsic-connectivity-contrast.html">previous 
+post</a>.</p>
+
+<h2 id="computing-global-brain-connectivity-maps">Computing global brain connectivity maps</h2>
+
+<p>The GBC value of a voxel is computed in the following way:</p>
+
+<ul>
+  <li>Compute its correlation to all other voxels in the brain (or in the
+provided voxel mask).</li>
+  <li>Transform the correlation values to <em>z</em>-scores using <a href="http://en.wikipedia.org/wiki/Fisher_transformation">Fisher’s <em>r</em>-to-<em>z</em> 
+transform</a>.</li>
+  <li>Average the <em>z</em>-scores.</li>
 </ul>
+
+<p>As a matter of fact, AFNI already provides a simple way to calculate just 
+that, namely the <a href="http://afni.nimh.nih.gov/pub/dist/doc/program_help/3dTcorrMap.html"><code>3dTcorrMap</code></a>,
+which, according to its documentation:</p>
+
+<blockquote>
+  <p>For each voxel time series, computes the correlation between it
+and all other voxels, and combines this set of values into the
+output dataset(s) in some way.</p>
+</blockquote>
+
+<p>The combination of “some way” in our case is a simple mean of 
+<em>z</em>-transformed correlation values, which is accomplished using the
+<code>-Zmean</code> option:</p>
+
+<blockquote>
+  <p>-Zmean pp = Save tanh of mean arctanh(correlation) into ‘pp’</p>
+</blockquote>
+
+<p>The calculation of a subject GBC map therefore boils down to running the 
+following command:</p>
+
+<div class="highlight"><pre><code class="language-bash" data-lang="bash">3dTcorrMap <span class="se">\</span>
+    -input <span class="nv">$timeseries</span> <span class="se">\</span>
+    -mask <span class="nv">$voxelmask</span> <span class="se">\</span>
+    -Zmean <span class="k">${</span><span class="nv">name</span><span class="k">}</span>_gbc_r.nii.gz <span class="se">\</span>
+    <span class="p">&amp;</span>&gt; log_<span class="k">${</span><span class="nv">name</span><span class="k">}</span>.txt</code></pre></div>
+
+<p>As the <code>-Zmean</code> option transforms the GBC values back to <em>r</em>-values, we
+need to convert them back to <em>z</em>-scores using 
+<a href="http://afni.nimh.nih.gov/pub/dist/doc/program_help/3dcalc.html"><code>3dcalc</code></a>:</p>
+
+<div class="highlight"><pre><code class="language-bash" data-lang="bash">3dcalc <span class="se">\</span>
+    -a <span class="k">${</span><span class="nv">name</span><span class="k">}</span>_gbc_r.nii.gz <span class="se">\</span>
+    -expr <span class="s2">&quot;atanh(a)&quot;</span> <span class="se">\</span>
+    -prefix <span class="k">${</span><span class="nv">name</span><span class="k">}</span>_gbc_z.nii.gz</code></pre></div>
+
+<h2 id="analyzing-between-group-differences">Analyzing between-group differences</h2>
+
+<p>Let’s assume that our goal is to discover how brain networks
+are affected by disease and we decide to use the GBC analysis
+to identify areas of differing brain connectivity.
+In this setup, we have two sets of rs-fMRI scans: from control
+participants and from patients. We calculate GBC maps for all subjects
+in the experiment and then run a series of <em>t</em>-tests, one for each voxel,
+using AFNI’s <a href="http://afni.nimh.nih.gov/pub/dist/doc/program_help/3dttest++.html"><code>3dttest++</code></a>:</p>
+
+<div class="highlight"><pre><code class="language-bash" data-lang="bash">3dttest++ <span class="se">\</span>
+    -setA group_one/*_gbc_z.nii.gz <span class="se">\</span>
+    -setB group_two/*_gbc_z.nii.gz <span class="se">\</span>
+    -mask <span class="nv">$voxelmask</span> <span class="se">\</span>
+    -prefix gbc_results.nii.gz</code></pre></div>
+
+<p>The output file, <code>gbc_results.nii.gz</code>, is composed of multiple “sub-bricks”,
+and it might be helpful to extract the two most important ones into separate files:</p>
+
+<div class="highlight"><pre><code class="language-bash" data-lang="bash">3dcalc <span class="se">\</span>
+    -a <span class="s2">&quot;gbc_results.nii.gz[0]&quot;</span> <span class="se">\</span>
+    -expr <span class="s2">&quot;a&quot;</span> <span class="se">\</span>
+    -prefix gbc_groupdiff.nii.gz
+
+3dcalc <span class="se">\</span>
+    -a <span class="s2">&quot;gbc_results.nii.gz[1]&quot;</span> <span class="se">\</span>
+    -expr <span class="s2">&quot;a&quot;</span> <span class="se">\</span>
+    -prefix gbc_tstat.nii.gz</code></pre></div>
+
+<p>As the last step of the GBC analysis, the output statistical map
+should be subjected to multiple comparisons correction.</p>
+
+<h2 id="references">References</h2>
+
+<ol class="bibliography"><li><span id="Cole:etal:2010">Cole, M. W., Pathak, S., and Schneider, W. (2010). Identifying the brain’s most globally connected regions. <i>NeuroImage</i> 49, 3132–3148. doi:10.1016/j.neuroimage.2009.11.001.</span>
+    
+    <ul class="nav nav-pills">
+         
+        <li> 
+            <a class="bib-materials" href="http://dx.doi.org/10.1016/j.neuroimage.2009.11.001">
+                DOI
+            </a>
+        </li>
+        
+    </ul>
+
+</li>
+<li><span id="Cole:etal:2011">Cole, M. W., Anticevic, A., Repovs, G., and Barch, D. (2011). Variable Global Dysconnectivity and Individual Differences in
+        Schizophrenia. <i>Biological Psychiatry</i> 70, 43–50. doi:10.1016/j.biopsych.2011.02.010.</span>
+    
+    <ul class="nav nav-pills">
+         
+        <li> 
+            <a class="bib-materials" href="http://dx.doi.org/10.1016/j.biopsych.2011.02.010">
+                DOI
+            </a>
+        </li>
+        
+    </ul>
+
+</li></ol>
 
   </article>
 
