@@ -89,7 +89,9 @@ using AFNI's [`3dttest++`](http://afni.nimh.nih.gov/pub/dist/doc/program_help/3d
 {% endhighlight %}
 
 The output file, `gbc_results.nii.gz`, is composed of multiple "sub-bricks",
-and it might be helpful to extract the two most important ones into separate files:
+and it might be helpful to extract the two most important ones --
+the difference of group means and the associated *t*-statistics -- into 
+separate files for further analysis:
 {% highlight bash %}
 3dcalc \
     -a "gbc_results.nii.gz[0]" \
@@ -101,9 +103,6 @@ and it might be helpful to extract the two most important ones into separate fil
     -expr "a" \
     -prefix gbc_tstat.nii.gz
 {% endhighlight %}
-
-As the last step of the GBC analysis, the output statistical map
-should be subjected to multiple comparisons correction.
 
 References
 ----------
