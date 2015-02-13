@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>Exploring the neuroanatomical ontology of the Allen Mouse Brain Atlas</title>
+    <meta name="description" content="Studying the nervous system">
+
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="canonical" href="http://adliska.com/2015/02/13/allen-mouse-brain-atlas-structural-annotation-neuroanatomical-ontology.html">
+
+    <script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+         (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+         m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+         })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+        ga('create', 'UA-55554430-2', 'auto');
+        ga('send', 'pageview');
+    </script>
+</head>
+
+
+  <body>
+
+    <header class="site-header">
+
+  <div class="wrapper">
+
+    <a class="site-title" href="/">Adam Liska</a>
+
+    <nav class="site-nav">
+      <a href="#" class="menu-icon">
+        <svg viewBox="0 0 18 15">
+          <path fill="#424242" d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.031C17.335,0,18,0.665,18,1.484L18,1.484z"/>
+          <path fill="#424242" d="M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0c0-0.82,0.665-1.484,1.484-1.484 h15.031C17.335,6.031,18,6.696,18,7.516L18,7.516z"/>
+          <path fill="#424242" d="M18,13.516C18,14.335,17.335,15,16.516,15H1.484C0.665,15,0,14.335,0,13.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.031C17.335,12.031,18,12.696,18,13.516L18,13.516z"/>
+        </svg>
+      </a>
+
+      <div class="trigger">
+          <a class="page-link" href="/research-blog">Research blog</a>
+          <a class="page-link" href="/publications">Publications</a>
+          <a class="page-link" href="/notes">Notes</a>
+          <a class="page-link" href="/projects">Projects</a>
+      </div>
+    </nav>
+
+  </div>
+
+</header>
+
+
+    <div class="page-content">
+      <div class="wrapper">
+        <div class="post">
+
+  <header class="post-header">
+    <h1 class="post-title">Exploring the neuroanatomical ontology of the Allen Mouse Brain Atlas</h1>
+    <p class="post-meta">Feb 13, 2015</p>
+  </header>
+
+  <article class="post-content">
+    <h2 id="introduction">Introduction</h2>
+
+<p>In an <a href="/2015/02/01/working-with-the-allen-mouse-brain-reference-atlas.html">earlier post</a>,
+I described how to download the <a href="http://atlas.brain-map.org/">Allen Mouse Brain Reference 
+Atlas</a> and convert it to the NIfTI format. In case
+you missed it, you can download the grayscale Nissl volume of the reconstructed
+brain <a href="/downloads/other/allen_mouse_brain_reference_atlas.nii.gz">here</a> 
+(29.9 MB). This volume will serve as a starting point in this post, in which
+we’ll have a closer look at the structural annotation and the 
+associated neuroanatomical ontology.</p>
+
+<h2 id="hierarchical-organization-of-mouse-brain-structures">Hierarchical organization of mouse brain structures</h2>
+
+<p>The Allen Mouse Brain Reference Atlas comes with a neuroanatomical ontology
+of brain structures organized in a <a href="http://en.wikipedia.org/wiki/Tree_structure">hierarchical 
+tree</a>. Its construction,
+nomenclature choices, subsequent changes and other issues were described
+in the <a href="http://help.brain-map.org/download/attachments/2818169/AllenReferenceAtlas_v1_2008_102011.pdf?version=1">2008</a>
+ and <a href="http://help.brain-map.org/download/attachments/2818169/AllenReferenceAtlas_v2_2011.pdf?version=1">2011</a>
+technical white papers. However, the best way how to
+explore the brain structure hierarchy is using the online <a href="http://atlas.brain-map.org/">Interactive Atlas 
+Viewer</a>, in which you can navigate through the 
+hierarchy using the panel on the left.</p>
+
+<p>Notice that there are four groups of structures at the highest level of the
+organization. These are: (1) grey matter, (2) fiber tracts, (3) ventricular 
+systems, and (4) grooves. The grey matter group is further subdivided into
+(1.1) cerebrum, (1.2) brain stem, and (1.3) cerebellum. These are subdivided
+further, and so on and so forth.</p>
+
+<h2 id="downloading-and-reading-the-structural-annotation-volume">Downloading and reading the structural annotation volume</h2>
+
+<p>The structural annotation data can be downloaded from the <a href="http://help.brain-map.org//display/mousebrain/API#API-3DReferenceModels">API 
+site</a>
+of the reference atlas or directly 
+<a href="http://api.brain-map.org/api/v2/well_known_file_download/197642854">here</a>
+(6.7 MB). It is an archive containing two files: <code>annotation.mhd</code> and
+<code>annotation.raw</code>. We will only need the latter, which contains the 3-D 
+structure annotation volume packed into a 1-D numerical array. The following 
+method <code>read_annotations()</code> reads the binary file and transforms it into a 
+well-shaped volume. The code is identical to the one used to read the grayscale
+Nissl volume and was therefore explained in detail in the <a href="/2015/02/01/working-with-the-allen-mouse-brain-reference-atlas.html#reading-the-atlas-in-python">last 
+post</a>.</p>
+
+<div class="highlight"><pre><code class="language-python" data-lang="python"><span class="kn">import</span> <span class="nn">numpy</span> <span class="kn">as</span> <span class="nn">np</span>
+
+<span class="k">def</span> <span class="nf">read_annotations</span><span class="p">():</span>
+    <span class="n">annotationfile</span> <span class="o">=</span> <span class="s">&#39;/path/to/annotation.raw&#39;</span>
+    <span class="n">dim</span> <span class="o">=</span> <span class="p">[</span><span class="mi">528</span><span class="p">,</span> <span class="mi">320</span><span class="p">,</span> <span class="mi">456</span><span class="p">]</span>
+
+    <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="n">annotationfile</span><span class="p">,</span> <span class="s">&quot;rb&quot;</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>
+        <span class="n">values</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">fromstring</span><span class="p">(</span><span class="n">f</span><span class="o">.</span><span class="n">read</span><span class="p">(),</span> <span class="n">dtype</span><span class="o">=</span><span class="s">&#39;uint32&#39;</span><span class="p">)</span>
+    
+    <span class="n">values</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">reshape</span><span class="p">(</span><span class="n">values</span><span class="p">,</span> <span class="n">dim</span><span class="p">,</span> <span class="n">order</span><span class="o">=</span><span class="s">&#39;F&#39;</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">values</span></code></pre></div>
+
+<p>The numerical value of a given voxel represents the structure ID of the 
+finest level structure annotated for the voxel. This means, for example,
+that in order to select all striatum voxels, we will need to search
+for voxels with IDs corresponding to the following structures: STRd (striatum 
+dorsal region), STRv (striatum ventral region), LSX (lateral septal 
+complex) and sAMY (striatum-like amygdalar nuclei), most of which are
+subdivided even further. This is where the ontology comes into play.</p>
+
+<h2 id="downloading-and-reading-the-neuroanatomical-ontology">Downloading and reading the neuroanatomical ontology</h2>
+
+<p>The ontology can be downloaded as a hierarchically structured <a href="http://en.wikipedia.org/wiki/JSON">JSON 
+file</a>; the details are described
+on the Allen Brain Atlas API site <a href="http://help.brain-map.org/display/api/Atlas+Drawings+and+Ontologies">Atlas Drawing and 
+Ontologies</a>.
+As it is not very large, we will call it directly from within our code:</p>
+
+<div class="highlight"><pre><code class="language-python" data-lang="python"><span class="kn">import</span> <span class="nn">json</span>
+<span class="kn">import</span> <span class="nn">requests</span>
+
+<span class="k">def</span> <span class="nf">read_ontology</span><span class="p">():</span>
+    <span class="n">ontologyurl</span> <span class="o">=</span> <span class="s">&#39;http://api.brain-map.org/api/v2/structure_graph_download/1.json&#39;</span>
+    <span class="n">ontology</span> <span class="o">=</span> <span class="n">json</span><span class="o">.</span><span class="n">loads</span><span class="p">(</span><span class="n">requests</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">ontologyurl</span><span class="p">)</span><span class="o">.</span><span class="n">text</span><span class="p">)</span>
+    
+    <span class="n">structures</span> <span class="o">=</span> <span class="n">process_ontology</span><span class="p">(</span><span class="n">ontology</span><span class="p">[</span><span class="s">&#39;msg&#39;</span><span class="p">])</span>
+
+    <span class="k">return</span> <span class="n">structures</span></code></pre></div>
+
+<p>The goal is to create a <a href="http://en.wikipedia.org/wiki/Associative_array">dictionary</a>
+of brain structures, with the key being the ID of the given brain structure
+and the value its associated metadata (name, acronym, parent structure, etc.).
+This can be achieved using the following method, which as an input parameter
+takes a list of elements from the JSON file (each corresponding to a 
+brain structure), processes them one by one and then 
+<a href="http://en.wikipedia.org/wiki/Recursion_(computer_science)">recursively</a>
+calls itself to process their children structures:</p>
+
+<div class="highlight"><pre><code class="language-python" data-lang="python"><span class="kn">import</span> <span class="nn">itertools</span>
+
+<span class="k">def</span> <span class="nf">process_ontology</span><span class="p">(</span><span class="n">elementlist</span><span class="p">):</span>
+    <span class="n">structures</span> <span class="o">=</span> <span class="p">{}</span>
+    
+    <span class="k">for</span> <span class="n">element</span> <span class="ow">in</span> <span class="n">elementlist</span><span class="p">:</span>
+        <span class="n">structures</span><span class="p">[</span><span class="n">element</span><span class="p">[</span><span class="s">&#39;id&#39;</span><span class="p">]]</span> <span class="o">=</span> <span class="p">{</span>
+            <span class="s">&#39;id&#39;</span><span class="p">:</span> <span class="n">element</span><span class="p">[</span><span class="s">&#39;id&#39;</span><span class="p">],</span>
+            <span class="s">&#39;atlas_id&#39;</span><span class="p">:</span> <span class="n">element</span><span class="p">[</span><span class="s">&#39;atlas_id&#39;</span><span class="p">],</span>
+            <span class="s">&#39;ontology_id&#39;</span><span class="p">:</span> <span class="n">element</span><span class="p">[</span><span class="s">&#39;ontology_id&#39;</span><span class="p">],</span>
+            <span class="s">&#39;acronym&#39;</span><span class="p">:</span> <span class="n">element</span><span class="p">[</span><span class="s">&#39;acronym&#39;</span><span class="p">],</span>
+            <span class="s">&#39;name&#39;</span><span class="p">:</span> <span class="n">element</span><span class="p">[</span><span class="s">&#39;name&#39;</span><span class="p">],</span>
+            <span class="s">&#39;color_hex_triplet&#39;</span><span class="p">:</span> <span class="n">element</span><span class="p">[</span><span class="s">&#39;color_hex_triplet&#39;</span><span class="p">],</span>
+            <span class="s">&#39;graph_order&#39;</span><span class="p">:</span> <span class="n">element</span><span class="p">[</span><span class="s">&#39;graph_order&#39;</span><span class="p">],</span>
+            <span class="s">&#39;st_level&#39;</span><span class="p">:</span> <span class="n">element</span><span class="p">[</span><span class="s">&#39;st_level&#39;</span><span class="p">],</span>
+            <span class="s">&#39;hemisphere_id&#39;</span><span class="p">:</span> <span class="n">element</span><span class="p">[</span><span class="s">&#39;hemisphere_id&#39;</span><span class="p">],</span>
+            <span class="s">&#39;parent_structure_id&#39;</span><span class="p">:</span> <span class="n">element</span><span class="p">[</span><span class="s">&#39;parent_structure_id&#39;</span><span class="p">],</span>
+            <span class="s">&#39;children_structure_ids&#39;</span><span class="p">:</span> <span class="p">[</span><span class="n">el</span><span class="p">[</span><span class="s">&#39;id&#39;</span><span class="p">]</span> <span class="k">for</span> <span class="n">el</span> <span class="ow">in</span> <span class="n">element</span><span class="p">[</span><span class="s">&#39;children&#39;</span><span class="p">]]</span>
+        <span class="p">}</span>
+        
+        <span class="k">if</span> <span class="n">element</span><span class="p">[</span><span class="s">&#39;children&#39;</span><span class="p">]:</span>
+            <span class="n">children</span> <span class="o">=</span> <span class="n">process_ontology</span><span class="p">(</span><span class="n">element</span><span class="p">[</span><span class="s">&#39;children&#39;</span><span class="p">])</span>
+            <span class="n">structures</span><span class="o">.</span><span class="n">update</span><span class="p">(</span><span class="n">children</span><span class="p">)</span>
+            <span class="n">structures</span><span class="p">[</span><span class="n">element</span><span class="p">[</span><span class="s">&#39;id&#39;</span><span class="p">]][</span><span class="s">&#39;annotation_ids&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span>
+                <span class="n">itertools</span><span class="o">.</span><span class="n">chain</span><span class="p">(</span><span class="o">*</span><span class="p">[</span><span class="n">children</span><span class="p">[</span><span class="n">child</span><span class="p">][</span><span class="s">&#39;annotation_ids&#39;</span><span class="p">]</span> <span class="k">for</span> <span class="n">child</span> <span class="ow">in</span> <span class="n">children</span><span class="p">]))</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="n">structures</span><span class="p">[</span><span class="n">element</span><span class="p">[</span><span class="s">&#39;id&#39;</span><span class="p">]][</span><span class="s">&#39;annotation_ids&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="p">[</span><span class="n">element</span><span class="p">[</span><span class="s">&#39;id&#39;</span><span class="p">]]</span>
+
+    <span class="k">return</span> <span class="n">structures</span></code></pre></div>
+
+<p>To generate the dictionary of neuroanatomical structures, we need to
+run the following line of code:</p>
+
+<div class="highlight"><pre><code class="language-python" data-lang="python"><span class="n">structures</span> <span class="o">=</span> <span class="n">read_ontology</span><span class="p">()</span></code></pre></div>
+
+<p>We can then query the ontology for information associated with individual
+regions. For instance, let’s have a look at the information about
+the prelimbic area, ID 972 (<code>structures[972]</code>):</p>
+
+<div class="highlight"><pre><code class="language-javascript" data-lang="javascript"><span class="p">{</span><span class="s1">&#39;acronym&#39;</span><span class="o">:</span> <span class="nx">u</span><span class="s1">&#39;PL&#39;</span><span class="p">,</span>
+ <span class="s1">&#39;annotation_ids&#39;</span><span class="o">:</span> <span class="p">[</span><span class="mi">171</span><span class="p">,</span> <span class="mi">132</span><span class="p">,</span> <span class="mi">363</span><span class="p">,</span> <span class="mi">304</span><span class="p">,</span> <span class="mi">195</span><span class="p">,</span> <span class="mi">84</span><span class="p">],</span>
+ <span class="s1">&#39;atlas_id&#39;</span><span class="o">:</span> <span class="mi">262</span><span class="p">,</span>
+ <span class="s1">&#39;children_structure_ids&#39;</span><span class="o">:</span> <span class="p">[</span><span class="mi">171</span><span class="p">,</span> <span class="mi">195</span><span class="p">,</span> <span class="mi">304</span><span class="p">,</span> <span class="mi">363</span><span class="p">,</span> <span class="mi">84</span><span class="p">,</span> <span class="mi">132</span><span class="p">],</span>
+ <span class="s1">&#39;color_hex_triplet&#39;</span><span class="o">:</span> <span class="nx">u</span><span class="s1">&#39;2FA850&#39;</span><span class="p">,</span>
+ <span class="s1">&#39;graph_order&#39;</span><span class="o">:</span> <span class="mi">207</span><span class="p">,</span>
+ <span class="s1">&#39;hemisphere_id&#39;</span><span class="o">:</span> <span class="mi">3</span><span class="p">,</span>
+ <span class="s1">&#39;id&#39;</span><span class="o">:</span> <span class="mi">972</span><span class="p">,</span>
+ <span class="s1">&#39;name&#39;</span><span class="o">:</span> <span class="nx">u</span><span class="s1">&#39;Prelimbic area&#39;</span><span class="p">,</span>
+ <span class="s1">&#39;ontology_id&#39;</span><span class="o">:</span> <span class="mi">1</span><span class="p">,</span>
+ <span class="s1">&#39;parent_structure_id&#39;</span><span class="o">:</span> <span class="mi">315</span><span class="p">,</span>
+ <span class="s1">&#39;st_level&#39;</span><span class="o">:</span> <span class="nx">None</span><span class="p">}</span></code></pre></div>
+
+<p>We can see, among other things, its full name, acronym, and most importantly,
+the IDs of its substructures at the lowest level (<code>annotation_ids</code>), which
+are exactly the values we see in the annotation volume that we imported
+in the previous section.</p>
+
+<p>Unfortunately, the Interactive Atlas Viewer currently doesn’t provide the 
+IDs of selected structures. We can, however, use the following method to
+get the ID of a structure given its acronym:</p>
+
+<div class="highlight"><pre><code class="language-python" data-lang="python"><span class="k">def</span> <span class="nf">get_id_by_acronym</span><span class="p">(</span><span class="n">structures</span><span class="p">,</span> <span class="n">acronym</span><span class="p">):</span>
+    <span class="n">structid</span> <span class="o">=</span> <span class="p">[</span><span class="n">sid</span> <span class="k">for</span> <span class="n">sid</span> <span class="ow">in</span> <span class="n">structures</span>
+        <span class="k">if</span> <span class="n">structures</span><span class="p">[</span><span class="n">sid</span><span class="p">][</span><span class="s">&#39;acronym&#39;</span><span class="p">]</span> <span class="o">==</span> <span class="n">acronym</span><span class="p">]</span>
+
+    <span class="k">if</span> <span class="n">structid</span><span class="p">:</span>
+        <span class="k">return</span> <span class="n">structid</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="k">return</span> <span class="bp">None</span></code></pre></div>
+
+<p>Accordingly, the output of <code>get_id_by_acronym(structures, 'PL')</code> is the value
+972.</p>
+
+<h2 id="creating-structure-masks">Creating structure masks</h2>
+
+<p>The annotation volume extracted above can be saved as a NIfTI file
+following the procedure described <a href="/2015/02/01/working-with-the-allen-mouse-brain-reference-atlas.html#saving-the-volume-in-the-nifti-format">last 
+time</a>.
+However, as we said before, this volume contains only annotations of the finest
+level structures. More often, we are interested in higher level structures.
+For example, in the mouse mesoscale connectome paper, published by 
+Allen Institute researchers <a href="#Oh:etal:2014">(Oh et al., 2014)</a>, the connectivity
+between 295 gray matter structures from the middle level of the 
+neuroanatomical ontology was studied. It is therefore important to be 
+able to create masks for structures at any level of the hierarchy. And that’s
+exactly the functionality provided by the following method:</p>
+
+<div class="highlight"><pre><code class="language-python" data-lang="python"><span class="k">def</span> <span class="nf">save_structure_mask</span><span class="p">(</span><span class="n">structure_id</span><span class="p">,</span> <span class="n">filename</span><span class="p">,</span> <span class="n">structures</span><span class="p">,</span> <span class="n">annotations</span><span class="p">):</span>
+    <span class="n">values</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">in1d</span><span class="p">(</span><span class="n">annotations</span><span class="o">.</span><span class="n">ravel</span><span class="p">(),</span> 
+        <span class="n">structures</span><span class="p">[</span><span class="n">structure_id</span><span class="p">][</span><span class="s">&#39;annotation_ids&#39;</span><span class="p">])</span><span class="o">.</span><span class="n">reshape</span><span class="p">(</span><span class="n">annots</span><span class="o">.</span><span class="n">shape</span><span class="p">)</span>
+    
+    <span class="n">h</span> <span class="o">=</span> <span class="n">nib</span><span class="o">.</span><span class="n">Nifti1Header</span><span class="p">()</span>
+    <span class="n">h</span><span class="o">.</span><span class="n">set_data_shape</span><span class="p">(</span><span class="n">values</span><span class="o">.</span><span class="n">shape</span><span class="p">)</span>
+    <span class="n">h</span><span class="o">.</span><span class="n">set_zooms</span><span class="p">([</span><span class="mf">0.025</span><span class="p">,</span> <span class="mf">0.025</span><span class="p">,</span> <span class="mf">0.025</span><span class="p">])</span>
+    <span class="n">h</span><span class="o">.</span><span class="n">set_sform</span><span class="p">([[</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">0</span><span class="p">],[</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">],[</span><span class="mi">0</span><span class="p">,</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">]],</span> <span class="n">code</span><span class="o">=</span><span class="s">&#39;aligned&#39;</span><span class="p">)</span>
+    <span class="n">h</span><span class="o">.</span><span class="n">set_data_dtype</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">uint8</span><span class="p">)</span>
+    
+    <span class="n">f</span> <span class="o">=</span> <span class="n">nib</span><span class="o">.</span><span class="n">Nifti1Image</span><span class="p">(</span><span class="n">values</span><span class="o">.</span><span class="n">astype</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">uint8</span><span class="p">),</span> <span class="bp">None</span><span class="p">,</span> <span class="n">header</span><span class="o">=</span><span class="n">h</span><span class="p">)</span>
+    
+    <span class="n">nib</span><span class="o">.</span><span class="n">save</span><span class="p">(</span><span class="n">f</span><span class="p">,</span> <span class="n">filename</span><span class="p">)</span></code></pre></div>
+
+<p>Let’s say we need a mask of thalamus:</p>
+
+<div class="highlight"><pre><code class="language-python" data-lang="python"><span class="n">structures</span> <span class="o">=</span> <span class="n">read_ontology</span><span class="p">()</span>
+<span class="n">annotations</span> <span class="o">=</span> <span class="n">read_annotations</span><span class="p">()</span>
+
+<span class="n">acronym</span> <span class="o">=</span> <span class="s">&#39;TH&#39;</span>
+<span class="n">filename</span> <span class="o">=</span> <span class="s">&#39;/path/to/output/mask_thalamus.nii.gz&#39;</span>
+<span class="n">structure_id</span> <span class="o">=</span> <span class="n">get_id_by_acronym</span><span class="p">(</span><span class="n">structures</span><span class="p">,</span> <span class="n">acronym</span><span class="p">)</span>
+
+<span class="n">save_structure_mask</span><span class="p">(</span><span class="n">structure_id</span><span class="p">,</span> <span class="n">filename</span><span class="p">,</span> <span class="n">structures</span><span class="p">,</span> <span class="n">annotations</span><span class="p">)</span></code></pre></div>
+
+<p>Masks for all structures in the ontology can be created enclosing the 
+last four lines in a simple <a href="http://en.wikipedia.org/wiki/For_loop"><code>for</code> 
+loop</a>.</p>
+
+<p>And this is it. Again, in case you have any questions, suggestions, etc.,
+don’t hesitate to contact me.</p>
+
+<h2 id="references">References</h2>
+
+<ol class="bibliography"><li><span id="Oh:etal:2014">Oh, S. W., Harris, J. A., Ng, L., Winslow, B., Cain, N., Mihalas, S., Wang, Q., Lau, C., Kuan, L., Henry, A. M., et al. (2014). A mesoscale connectome of the mouse brain. <i>Nature</i> 508, 207–214. doi:10.1038/nature13186.</span>
+    
+    <ul class="nav nav-pills">
+         
+        <li> 
+            <a class="bib-materials" href="http://dx.doi.org/10.1038/nature13186">
+                DOI
+            </a>
+        </li>
+        
+    </ul>
+
+</li></ol>
+
+  </article>
+
+</div>
+
+      </div>
+    </div>
+
+    <footer class="site-footer">
+
+<div class="wrapper">
+
+    <!-- <h2 class="footer-heading">Adam Liska</h2> -->
+
+    <div class="footer-col-wrapper">
+        <div class="footer-col  footer-col-1">
+            <ul class="contact-list">
+                <li><strong>Contact</strong></li>
+                <li>adam AT adliska.com</li>
+            </ul>
+        </div>
+
+        <div class="footer-col  footer-col-2">
+            <ul class="social-media-list">
+                
+                <li>
+                <a href="https://github.com/adliska">
+                    <span class="icon  icon--github">
+                        <svg viewBox="0 0 16 16">
+                        <path fill="#828282" d="M7.999,0.431c-4.285,0-7.76,3.474-7.76,7.761 c0,3.428,2.223,6.337,5.307,7.363c0.388,0.071,0.53-0.168,0.53-0.374c0-0.184-0.007-0.672-0.01-1.32 c-2.159,0.469-2.614-1.04-2.614-1.04c-0.353-0.896-0.862-1.135-0.862-1.135c-0.705-0.481,0.053-0.472,0.053-0.472 c0.779,0.055,1.189,0.8,1.189,0.8c0.692,1.186,1.816,0.843,2.258,0.645c0.071-0.502,0.271-0.843,0.493-1.037 C4.86,11.425,3.049,10.76,3.049,7.786c0-0.847,0.302-1.54,0.799-2.082C3.768,5.507,3.501,4.718,3.924,3.65 c0,0,0.652-0.209,2.134,0.796C6.677,4.273,7.34,4.187,8,4.184c0.659,0.003,1.323,0.089,1.943,0.261 c1.482-1.004,2.132-0.796,2.132-0.796c0.423,1.068,0.157,1.857,0.077,2.054c0.497,0.542,0.798,1.235,0.798,2.082 c0,2.981-1.814,3.637-3.543,3.829c0.279,0.24,0.527,0.713,0.527,1.437c0,1.037-0.01,1.874-0.01,2.129 c0,0.208,0.14,0.449,0.534,0.373c3.081-1.028,5.302-3.935,5.302-7.362C15.76,3.906,12.285,0.431,7.999,0.431z"/>
+                        </svg>
+                    </span>
+
+                    <span class="username">adliska</span>
+                </a>
+                </li>
+                
+
+                
+                <li>
+                <a href="https://twitter.com/adliska">
+                    <span class="icon  icon--twitter">
+                        <svg viewBox="0 0 16 16">
+                        <path fill="#828282" d="M15.969,3.058c-0.586,0.26-1.217,0.436-1.878,0.515c0.675-0.405,1.194-1.045,1.438-1.809
+                        c-0.632,0.375-1.332,0.647-2.076,0.793c-0.596-0.636-1.446-1.033-2.387-1.033c-1.806,0-3.27,1.464-3.27,3.27 c0,0.256,0.029,0.506,0.085,0.745C5.163,5.404,2.753,4.102,1.14,2.124C0.859,2.607,0.698,3.168,0.698,3.767 c0,1.134,0.577,2.135,1.455,2.722C1.616,6.472,1.112,6.325,0.671,6.08c0,0.014,0,0.027,0,0.041c0,1.584,1.127,2.906,2.623,3.206 C3.02,9.402,2.731,9.442,2.433,9.442c-0.211,0-0.416-0.021-0.615-0.059c0.416,1.299,1.624,2.245,3.055,2.271 c-1.119,0.877-2.529,1.4-4.061,1.4c-0.264,0-0.524-0.015-0.78-0.046c1.447,0.928,3.166,1.469,5.013,1.469 c6.015,0,9.304-4.983,9.304-9.304c0-0.142-0.003-0.283-0.009-0.423C14.976,4.29,15.531,3.714,15.969,3.058z"/>
+                        </svg>
+                    </span>
+
+                    <span class="username">adliska</span>
+                </a>
+                </li>
+                
+                <li>
+                <a class="page-link" href="/feed.xml">
+                    <span class="icon">
+                        <svg version="1.1" id="Icons" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                        viewBox="0 0 100 100" style="enable-background:new 0 0 100 100;" xml:space="preserve">
+                        <path id="RSS" d="M25.4,74.569c2.18,2.177,3.506,5.131,3.514,8.42c-0.008,3.283-1.334,6.237-3.506,8.406L25.4,91.399
+                        c-2.176,2.166-5.148,3.49-8.453,3.49c-3.301,0-6.266-1.328-8.441-3.494C6.336,89.227,5,86.276,5,82.989
+                        c0-3.289,1.336-6.25,3.506-8.423v0.003c2.176-2.168,5.141-3.502,8.441-3.502C20.252,71.067,23.221,72.404,25.4,74.569z M25.4,74.566
+                        v0.003c0.004,0,0.004,0,0.004,0L25.4,74.566z M8.506,91.399c0,0,0,0,0-0.004c-0.004,0-0.004,0-0.004,0L8.506,91.399z M5.01,35.604
+                        v17.185c11.219,0.007,21.83,4.414,29.771,12.367c7.939,7.928,12.328,18.555,12.346,29.813h0.006V95h17.256
+                        c-0.014-16.37-6.668-31.198-17.426-41.964C36.203,42.272,21.381,35.614,5.01,35.604z M5.041,5v17.177
+                        C45.145,22.206,77.746,54.858,77.773,95H95c-0.012-24.81-10.096-47.288-26.393-63.596C52.305,15.101,29.842,5.011,5.041,5z"/>
+                        </svg>
+                    </span>
+
+                    <span class="username">RSS</span>
+                </a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="footer-col  footer-col-3">
+            <p class="text">Studying the nervous system</p>
+        </div>
+    </div>
+
+</div>
+
+</footer>
+
+
+  </body>
+
+</html>
