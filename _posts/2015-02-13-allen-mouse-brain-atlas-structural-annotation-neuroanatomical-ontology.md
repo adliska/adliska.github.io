@@ -235,8 +235,7 @@ save_structure_mask(structure_id, filename, structures, annotations)
 {% endhighlight %}
 
 Masks for all structures in the ontology can be created enclosing the 
-last four lines in a simple [`for` 
-loop](http://en.wikipedia.org/wiki/For_loop).
+last four lines in a simple `for` loop.
 
 And this is it. Again, in case you have any questions, suggestions, etc.,
 don't hesitate to contact me.
