@@ -17,6 +17,7 @@ Adam Liska,
 Diagonalization.**
 Luca Dodero, Alessandro Gozzi, Adam Liska, Vittorio Murino, Diego Sona (2014).
 *Medical Image Computing and Computer-Assisted Intervention–MICCAI 2014.*
+Cambridge, MA, USA.
 [[pdf](/downloads/publications/dodero_etal_2014.pdf)]
 
 **Semantic Spaces from Images** (MSc Thesis).
@@ -26,12 +27,11 @@ Adam Liska (2013).
 
 **VSEM: An open library for visual semantics representation.**
 [Elia Bruni](http://clic.cimec.unitn.it/~elia.bruni/),
-Ulisse Bordignon,
-Adam Liska,
+Ulisse Bordignon, Adam Liska,
 [Jasper Uijlings](http://homepages.inf.ed.ac.uk/juijling/#page=projects1),
 Irina Sergienya.
 *Proceedings of the 51st Annual Meeting of the Association for Computational 
-Linguistics: System Demonstrations.*
+Linguistics: System Demonstrations.* Sofia, Bulgaria.
 [[pdf](/downloads/publications/bruni_etal_2013.pdf)]
 [[bib](/downloads/publications/bruni_etal_2013.bib)]
 
@@ -46,4 +46,14 @@ Adam Liska,
 [Zdeněk Žabokrtský](https://ufal.mff.cuni.cz/zdenek-zabokrtsky/) (2010). 
 *Proceedings of the Seventh International Language Resources and Evaluation
 (LREC'10).*
+Valletta, Malta.
 [[pdf](/downloads/publications/bojar_etal_2010.pdf)]
+
+Abstracts and conference presentations
+--------------------------------------
+**Mapping large-scale connectivity networks of the mouse brain with fMRI.**
+Adam Liska, Francesco Sforazzini, Luca Dodero, Alberto Galbusera, 
+Angelo Bifone, Adam J Schwarz, Alessandro Gozzi (2014).
+*BRAIN-FET, 1st Clustering Workshop on Future Emerging 
+NeuroTechnologies.*
+Genova, Italy.
