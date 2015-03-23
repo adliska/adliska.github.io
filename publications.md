@@ -3,6 +3,9 @@ layout: page
 title: Publications
 permalink: /publications/
 ---
+
+2015
+----
 **Voxel­scale mapping of the mouse brain functional connectome.**
 Adam Liska, Alberto Galbusera, Adam J. Schwarz, Alessandro Gozzi (2015).
 *23rd Annual Meeting and Exhibition of the International Society for 
@@ -33,6 +36,9 @@ Adam Liska,
 [[abstract](http://arxiv.org/abs/1501.02714)]
 [[pdf](http://arxiv.org/pdf/1501.02714v1)]
 
+2014
+----
+
 **Mapping large-scale connectivity networks of the mouse brain with fMRI.**
 Adam Liska, Francesco Sforazzini, Luca Dodero, Alberto Galbusera, 
 Angelo Bifone, Adam J Schwarz, Alessandro Gozzi (2014).
@@ -53,6 +59,9 @@ Angelo Bifone, Alessandro Gozzi (2014).
 *Joint Annual Meeting ISMRM-ESMRMB 2014.*
 Milan, Italy.
 
+2013
+----
+
 **Semantic Spaces from Images** (MSc Thesis).
 Adam Liska (2013). 
 *Università degli Studi di Trento, The University of Melbourne.*
@@ -62,11 +71,14 @@ Adam Liska (2013).
 [Elia Bruni](http://clic.cimec.unitn.it/~elia.bruni/),
 Ulisse Bordignon, Adam Liska,
 [Jasper Uijlings](http://homepages.inf.ed.ac.uk/juijling/#page=projects1),
-Irina Sergienya.
+Irina Sergienya (2013).
 *Proceedings of the 51st Annual Meeting of the Association for Computational 
 Linguistics: System Demonstrations.* Sofia, Bulgaria.
 [[pdf](/downloads/publications/bruni_etal_2013.pdf)]
 [[bib](/downloads/publications/bruni_etal_2013.bib)]
+
+2010
+----
 
 **Cleaning of Parallel Texts for Machine Translation** (BSc Thesis).
 Adam Liska (2010). 
