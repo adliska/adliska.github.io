@@ -9,6 +9,8 @@ Cognitive Systems (Istituto Italiano di Tecnologia) in
 Rovereto, Italy 
 ([map](https://www.google.com/maps/place/Roveret://www.google.com/maps/place/38068+Rovereto+TN,+It%C3%A1lie/@47.2603133,11.7074777,5z/data=!4m2!3m1!1s0x47820ec143127041:0x6a9664123aebfadf)).
 
+I work under the supervision of [Alessandro Gozzi](http://cncs.iit.it/people/iit-unitn/researcher/alessandro-gozzi.html).
+
 <h2>My research</h2>
 I'm currently involved in implementing structural and functional 
 Magnetic Resonance Imaging ([MRI](http://en.wikipedia.org/wiki/Magnetic_resonance_imaging)) 
