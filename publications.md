@@ -3,8 +3,23 @@ layout: page
 title: Publications
 permalink: /publications/
 ---
+Journals
+--------
+**Functional connectivity hubs of the mouse brain.**
+Adam Liska, Alberto Galbusera, Adam J. Schwarz, Alessandro Gozzi (2015).
+*NeuroImage* (accepted).
 
-2015
+**From visual attributes to adjectives through decompositional 
+distributional semantics.**
+[Angeliki Lazaridou](https://sites.google.com/site/lazaridouangeliki/),
+[Georgiana Dinu](http://clic.cimec.unitn.it/~georgiana.dinu/),
+Adam Liska,
+[Marco Baroni](http://clic.cimec.unitn.it/marco/) (2015).
+*Transactions of the Association for Computational Linguistics.*
+[[abstract](http://arxiv.org/abs/1501.02714)]
+[[pdf](http://arxiv.org/pdf/1501.02714v1)]
+
+Conferences
 ----
 **Voxel­scale mapping of the mouse brain functional connectome.**
 Adam Liska, Alberto Galbusera, Adam J. Schwarz, Alessandro Gozzi (2015).
@@ -26,19 +41,6 @@ Francesca Foti, Cristina Neri, Laura Petrosini, Alessandro Gozzi (2015).
 Magnetic Resonance in Medicine (ISMRM 2015).*
 Toronto, Canada.
 
-**From visual attributes to adjectives through decompositional 
-distributional semantics.**
-[Angeliki Lazaridou](https://sites.google.com/site/lazaridouangeliki/),
-[Georgiana Dinu](http://clic.cimec.unitn.it/~georgiana.dinu/),
-Adam Liska,
-[Marco Baroni](http://clic.cimec.unitn.it/marco/) (2015).
-*Transactions of the Association for Computational Linguistics.*
-[[abstract](http://arxiv.org/abs/1501.02714)]
-[[pdf](http://arxiv.org/pdf/1501.02714v1)]
-
-2014
-----
-
 **Mapping large-scale connectivity networks of the mouse brain with fMRI.**
 Adam Liska, Francesco Sforazzini, Luca Dodero, Alberto Galbusera, 
 Angelo Bifone, Adam J Schwarz, Alessandro Gozzi (2014).
@@ -59,14 +61,6 @@ Angelo Bifone, Alessandro Gozzi (2014).
 *Joint Annual Meeting ISMRM-ESMRMB 2014.*
 Milan, Italy.
 
-2013
-----
-
-**Semantic Spaces from Images** (MSc Thesis).
-Adam Liska (2013). 
-*Università degli Studi di Trento, The University of Melbourne.*
-[[pdf](/downloads/publications/liska_2013.pdf)]
-
 **VSEM: An open library for visual semantics representation.**
 [Elia Bruni](http://clic.cimec.unitn.it/~elia.bruni/),
 Ulisse Bordignon, Adam Liska,
@@ -77,14 +71,6 @@ Linguistics: System Demonstrations.* Sofia, Bulgaria.
 [[pdf](/downloads/publications/bruni_etal_2013.pdf)]
 [[bib](/downloads/publications/bruni_etal_2013.bib)]
 
-2010
-----
-
-**Cleaning of Parallel Texts for Machine Translation** (BSc Thesis).
-Adam Liska (2010). 
-*Charles University in Prague.*
-[[pdf](/downloads/publications/liska_2010.pdf)]
-
 **Evaluating Utility of Data Sources in a Large Parallel Czech-English Corpus CzEng 0.9.**
 [Ondřej Bojar](http://www1.cuni.cz/~obo/),
 Adam Liska,
@@ -93,3 +79,15 @@ Adam Liska,
 (LREC'10).*
 Valletta, Malta.
 [[pdf](/downloads/publications/bojar_etal_2010.pdf)]
+
+Theses
+----
+**Semantic Spaces from Images** (MSc Thesis).
+Adam Liska (2013). 
+*Università degli Studi di Trento, The University of Melbourne.*
+[[pdf](/downloads/publications/liska_2013.pdf)]
+
+**Cleaning of Parallel Texts for Machine Translation** (BSc Thesis).
+Adam Liska (2010). 
+*Charles University in Prague.*
+[[pdf](/downloads/publications/liska_2010.pdf)]
