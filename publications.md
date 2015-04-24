@@ -7,7 +7,8 @@ Journals
 --------
 **Functional connectivity hubs of the mouse brain.**
 Adam Liska, Alberto Galbusera, Adam J. Schwarz, Alessandro Gozzi (2015).
-*NeuroImage* (accepted).
+*NeuroImage* (accepted for publication).
+[[abstract & pdf](http://www.sciencedirect.com/science/article/pii/S1053811915003249)]
 
 **From visual attributes to adjectives through decompositional 
 distributional semantics.**
