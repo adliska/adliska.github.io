@@ -7,8 +7,10 @@ Journals
 --------
 **Functional connectivity hubs of the mouse brain.**
 Adam Liska, Alberto Galbusera, Adam J. Schwarz, Alessandro Gozzi (2015).
-*NeuroImage* (In press).
+*NeuroImage*.
 [[pdf](/downloads/publications/liska_etal_2015.pdf)]
+[[slides](/downloads/presentations/liska_ismrm2015_presentation.pdf)]
+[[poster](/downloads/posters/liska_etal_2015_mfc_hubs_poster.pdf)]
 [[ScienceDirect](http://www.sciencedirect.com/science/article/pii/S1053811915003249)]
 
 **From visual attributes to adjectives through decompositional 
@@ -28,12 +30,15 @@ Adam Liska, Alberto Galbusera, Adam J. Schwarz, Alessandro Gozzi (2015).
 *23rd Annual Meeting and Exhibition of the International Society for 
 Magnetic Resonance in Medicine (ISMRM 2015).*
 Toronto, Canada.
+[[pdf](/downloads/publications/liska_etal_2015_ismrm.pdf)]
+[[slides](/downloads/presentations/liska_ismrm2015_presentation.pdf)]
 
 **Mapping effective connectivity in the mouse brain using Granger causality.**
 Md Taufiq Nasseef, Adam Liska, Stefano Panzeri, Alessandro Gozzi (2015).
 *23rd Annual Meeting and Exhibition of the International Society for 
 Magnetic Resonance in Medicine (ISMRM 2015).*
 Toronto, Canada.
+[[pdf](/downloads/publications/nasseef_etal_2015_ismrm.pdf)]
 
 **Neural and cognitive substrates of omega-3 fatty acid supplementation: 
 a voxel-based morphometry study in aged mice.**
@@ -42,6 +47,7 @@ Francesca Foti, Cristina Neri, Laura Petrosini, Alessandro Gozzi (2015).
 *23rd Annual Meeting and Exhibition of the International Society for 
 Magnetic Resonance in Medicine (ISMRM 2015).*
 Toronto, Canada.
+[[pdf](/downloads/publications/pagani_etal_2015_ismrm.pdf)]
 
 **Mapping large-scale connectivity networks of the mouse brain with fMRI.**
 Adam Liska, Francesco Sforazzini, Luca Dodero, Alberto Galbusera, 
