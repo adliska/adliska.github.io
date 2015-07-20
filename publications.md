@@ -21,7 +21,7 @@ Adam Liska,
 [Marco Baroni](http://clic.cimec.unitn.it/marco/) (2015).
 *Transactions of the Association for Computational Linguistics.*
 [[abstract](http://arxiv.org/abs/1501.02714)]
-[[pdf](http://arxiv.org/pdf/1501.02714v1)]
+[[pdf](http://aclweb.org/anthology/Q/Q15/Q15-1014.pdf)]
 
 Conferences
 ----
