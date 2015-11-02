@@ -25,6 +25,14 @@ Adam Liska,
 
 Conferences
 ----
+
+**Prefrontal hypo-connectivity in the 16p11.2 microdeletion autism model.**
+Alice Bertero, Gergely David, Adam Liska, Alberto Galbusera,
+Massimo Pasqualetti, Alessandro Gozzi (2015).
+*Annual Meeting of the Society for Neuroscience (SfN 2015).*
+Chicago, USA.
+[[abstract](http://sfn15.hubbian.com/id_6604/)]
+
 **Voxel­scale mapping of the mouse brain functional connectome.**
 Adam Liska, Alberto Galbusera, Adam J. Schwarz, Alessandro Gozzi (2015).
 *23rd Annual Meeting and Exhibition of the International Society for 

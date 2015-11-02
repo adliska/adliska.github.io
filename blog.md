@@ -5,8 +5,6 @@ permalink: /research-blog/
 inheader: true
 ---
 
-Currently under reconstruction!
-
 <ul class="post-list">
     {% for post in site.posts %}
         <li>
