@@ -5,49 +5,9 @@
     <description>Learning about the nervous system</description>
     <link>http://adliska.com/</link>
     <atom:link href="http://adliska.com/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Mon, 20 Jul 2015 13:08:23 +0200</pubDate>
-    <lastBuildDate>Mon, 20 Jul 2015 13:08:23 +0200</lastBuildDate>
+    <pubDate>Mon, 02 Nov 2015 11:48:58 +0100</pubDate>
+    <lastBuildDate>Mon, 02 Nov 2015 11:48:58 +0100</lastBuildDate>
     <generator>Jekyll v2.4.0</generator>
-    
-      <item>
-        <title>Exploring the neuroanatomical ontology of the Allen Mouse Brain Atlas</title>
-        <description>In an earlier post, I described how to download the Allen Mouse Brain Atlas and convert it to the NIfTI format. In this post, we&#39;ll have a closer look at the structural annotation and the associated neuroanatomical ontology that both come with the atlas.</description>
-        <pubDate>Fri, 13 Feb 2015 00:00:00 +0100</pubDate>
-        <link>http://adliska.com/2015/02/13/allen-mouse-brain-atlas-structural-annotation-neuroanatomical-ontology.html</link>
-        <guid isPermaLink="true">http://adliska.com/2015/02/13/allen-mouse-brain-atlas-structural-annotation-neuroanatomical-ontology.html</guid>
-        
-        
-      </item>
-    
-      <item>
-        <title>Global brain connectivity analysis in AFNI</title>
-        <description>In the last post, I talked about the global brain connectivity analysis and its use in identifying areas of differing brain connectivity across two or more conditions. In this post, I show how to implement this method using the AFNI set of neuroimaging data analysis tools.</description>
-        <pubDate>Mon, 09 Feb 2015 00:00:00 +0100</pubDate>
-        <link>http://adliska.com/2015/02/09/global-brain-connectivity-analysis-in-afni.html</link>
-        <guid isPermaLink="true">http://adliska.com/2015/02/09/global-brain-connectivity-analysis-in-afni.html</guid>
-        
-        
-      </item>
-    
-      <item>
-        <title>A method to identify areas of brain dysconnectivity</title>
-        <description>Resting-state functional Magnetic Resonance Imaging (rs-fMRI) has become a popular tool to study brain disorders. There has been accumulating evidence showing association of various brain disorders, such as schizophrenia and autism, with brain dysconnectivity and, in general, with alterations in brain networks.  In this post, I would like to describe a common method used to identify areas of dysconnectivity in the brain, namely the global brain connectivity analysis.</description>
-        <pubDate>Tue, 03 Feb 2015 00:00:00 +0100</pubDate>
-        <link>http://adliska.com/2015/02/03/global-connectivity-analysis-intrinsic-connectivity-contrast.html</link>
-        <guid isPermaLink="true">http://adliska.com/2015/02/03/global-connectivity-analysis-intrinsic-connectivity-contrast.html</guid>
-        
-        
-      </item>
-    
-      <item>
-        <title>Working with the Allen Mouse Brain Reference Atlas</title>
-        <description>The Allen Brain Atlas portal is an entry point to a wealth of publicly available information on the structure, function, and development of the nervous system. In the following series of posts, I would like to introduce several of those resources and show how to work with them.</description>
-        <pubDate>Sun, 01 Feb 2015 00:00:00 +0100</pubDate>
-        <link>http://adliska.com/2015/02/01/working-with-the-allen-mouse-brain-reference-atlas.html</link>
-        <guid isPermaLink="true">http://adliska.com/2015/02/01/working-with-the-allen-mouse-brain-reference-atlas.html</guid>
-        
-        
-      </item>
     
   </channel>
 </rss>
