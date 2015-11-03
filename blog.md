@@ -1,7 +1,7 @@
 ---
 layout: page
-title: Research blog
-permalink: /research-blog/
+title: Blog
+permalink: /blog/
 inheader: true
 ---
 
