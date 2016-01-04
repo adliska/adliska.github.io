@@ -102,8 +102,12 @@ Theses
 Adam Liska (2013). 
 *Università degli Studi di Trento, The University of Melbourne.*
 [[pdf](/downloads/publications/liska_2013.pdf)]
+[supervision: 
+    [Marco Baroni](http://clic.cimec.unitn.it/marco/),
+    [Elia Bruni](http://clic.cimec.unitn.it/~elia.bruni/)]
 
 **Cleaning of Parallel Texts for Machine Translation** (BSc Thesis).
 Adam Liska (2010). 
 *Charles University in Prague.*
 [[pdf](/downloads/publications/liska_2010.pdf)]
+[supervision: [Ondřej Bojar](http://www1.cuni.cz/~obo/)]
