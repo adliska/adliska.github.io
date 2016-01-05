@@ -3,6 +3,7 @@ layout: default
 ---
 
 <h2>About me</h2>
+<img src="images/adam_liska_photo.JPG" style="float: right; width: 30%">
 I'm Adam Liska, a graduate student at the [Functional Neuroimaging
 Lab](http://cncs.iit.it/research-labs/mri.html) of Center for Neuroscience and
 Cognitive Systems (Istituto Italiano di Tecnologia) in 
