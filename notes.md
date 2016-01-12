@@ -13,7 +13,8 @@ skalární součin, ortogonalita.
   * Permutace, determinant, vlastní čísla a vlastní vektory, pozitivně definitní
 matice, kvadratické formy.
 * Lineární programování
-* Matematická analýza I.
+* [Matematická analýza I](/downloads/notes/matematicka_analyza_I.pdf)
+  * Reálná čísla, posloupnosti, limity, funkce, derivace, řady.
 * Matematická analýza II.
 * Matematická analýza III.
 * Diskrétní matematika
