@@ -11,6 +11,7 @@ Adam Liska, Alberto Galbusera, Adam J. Schwarz, Alessandro Gozzi (2015).
 [[pdf](/downloads/publications/liska_etal_2015.pdf)]
 [[slides](/downloads/presentations/liska_ismrm2015_presentation.pdf)]
 [[poster](/downloads/posters/liska_etal_2015_mfc_hubs_poster.pdf)]
+[[code](/pubnotes/liska_etal_neuroimage_2015.html)]
 [[ScienceDirect](http://www.sciencedirect.com/science/article/pii/S1053811915003249)]
 
 **From visual attributes to adjectives through decompositional 
