@@ -5,9 +5,26 @@
     <description></description>
     <link>http://adliska.com/</link>
     <atom:link href="http://adliska.com/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Wed, 03 Feb 2016 10:22:52 +0100</pubDate>
-    <lastBuildDate>Wed, 03 Feb 2016 10:22:52 +0100</lastBuildDate>
+    <pubDate>Thu, 04 Feb 2016 10:11:10 +0100</pubDate>
+    <lastBuildDate>Thu, 04 Feb 2016 10:11:10 +0100</lastBuildDate>
     <generator>Jekyll v3.0.1</generator>
+    
+      <item>
+        <title>How to download Human Connectome Project data from Amazon Web Services</title>
+        <description>&lt;p&gt;All public releases of data produced by the 
+&lt;a href=&quot;http://www.humanconnectome.org/&quot;&gt;Human Connectome Project&lt;/a&gt; (HCP) are 
+available online through the &lt;a href=&quot;https://db.humanconnectome.org&quot;&gt;ConnectomeDB&lt;/a&gt;.
+Nevertheless, I’ve had trouble running the Aspera Connect browser plugin 
+– that’s required to download data from the database – on my Ubuntu machine
+(it crashes whenever I want to initiate a download).&lt;/p&gt;
+
+</description>
+        <pubDate>Thu, 04 Feb 2016 00:00:00 +0100</pubDate>
+        <link>http://adliska.com/2016/02/04/how-to-download-human-connectome-project-data-from-amazon-web-services-aws.html</link>
+        <guid isPermaLink="true">http://adliska.com/2016/02/04/how-to-download-human-connectome-project-data-from-amazon-web-services-aws.html</guid>
+        
+        
+      </item>
     
   </channel>
 </rss>
