@@ -76,12 +76,12 @@ Nevertheless, I’ve had trouble running the Aspera Connect browser plugin
 Amazon Web Services (AWS), as part of the 
 <a href="https://aws.amazon.com/public-data-sets/">AWS Public Data Sets</a> program,
 which makes the data available directly from the command line using
-<a href="https://aws.amazon.com/cli/">AWS Command Line Interface</a> (<code class="highlighter-rouge">awscli</code>).</p>
+<a href="https://aws.amazon.com/cli/">AWS Command Line Interface</a> (<code>awscli</code>).</p>
 
-<p>In order to access the data using <code class="highlighter-rouge">awscli</code>, you first need to create
+<p>In order to access the data using <code>awscli</code>, you first need to create
 your AWS credentials through the ConnectomeDB (the steps are described
 <a href="https://wiki.humanconnectome.org/display/PublicData/How+To+Connect+to+Connectome+Data+via+AWS">here</a>)
-and then setup your <code class="highlighter-rouge">awscli</code> accordingly (see the documentation 
+and then setup your <code>awscli</code> accordingly (see the documentation 
 <a href="http://docs.aws.amazon.com/cli/latest/userguide/cli-chap-welcome.html">here</a>).</p>
 
 <p>In case you’re not familiar with the HCP directory structure, 
@@ -96,13 +96,13 @@ The following code, for example, downloads the preprocessed diffusion
 data for 10 unrelated subjects (<a href="/downloads/code/unrelated_10.txt">text file</a>
  with the list of subjects):</p>
 
-<figure class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="c">#!/bin/bash</span>
+<div class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="c">#!/bin/bash</span>
 
 <span class="nv">subjectlist</span><span class="o">=</span>unrelated_10.txt
 
-<span class="k">while </span><span class="nb">read</span> -r subject;
-<span class="k">do
-    </span>mkdir -p hcp/<span class="nv">$subject</span>
+<span class="k">while</span> <span class="nb">read</span> -r subject<span class="p">;</span>
+<span class="k">do</span>
+    mkdir -p hcp/<span class="nv">$subject</span>
     mkdir -p hcp/<span class="nv">$subject</span>/T1w
     mkdir -p hcp/<span class="nv">$subject</span>/T1w/Diffusion
 
@@ -117,7 +117,7 @@ data for 10 unrelated subjects (<a href="/downloads/code/unrelated_10.txt">text 
         --recursive <span class="se">\</span>
         --region us-east-1
 
-<span class="k">done</span> &lt; <span class="nv">$subjectlist</span></code></pre></figure>
+<span class="k">done</span> &lt; <span class="nv">$subjectlist</span></code></pre></div>
 
 
   </article>
