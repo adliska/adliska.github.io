@@ -103,6 +103,7 @@ Theses
 Adam Liska (2013). 
 *Università degli Studi di Trento, The University of Melbourne.*
 [[pdf](/downloads/publications/liska_2013.pdf)]
+[code: [visual semantics toolkit](https://github.com/vsem/vsem/), [neural networks](https://github.com/adliska/apprendista)]
 [supervision: 
     [Marco Baroni](http://clic.cimec.unitn.it/marco/),
     [Elia Bruni](http://clic.cimec.unitn.it/~elia.bruni/)]
