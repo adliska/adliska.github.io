@@ -22,7 +22,7 @@ I work under the supervision of [Alessandro Gozzi](http://cncs.iit.it/people/iit
 I did my BSc in Computer Science at Charles University in Prague working on
 machine translation, and my MSc in Computer/Cognitive Science at 
 The University of Melbourne/University of Trento 
-working on computer vision, natural language processing and 
+working on computer vision, distributional semantics and 
 machine learning (see [theses](/publications/#theses)).
 
 <h2>Recent posts</h2>
