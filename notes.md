@@ -4,7 +4,8 @@ title: Notes
 permalink: /notes/
 ---
 
-# Lecture notes, [MFF UK](http://www.mff.cuni.cz/to.en/) (in Czech)
+# Zápisky z přednášek na [Matematicko-fyzikální fakultě UK](http://www.mff.cuni.cz/to.en/) (in Czech)
+
 * [Lineární algebra I]({{site.baseurl}}/downloads/notes/linearni_algebra_I.pdf)
   * Soustavy lineárních rovnic, Gaussova eliminační metoda, operace s maticemi,
 algebraická tělesa, vektorové prostory, lineární nezávislost, lineární zobrazení,
