@@ -112,4 +112,5 @@ Adam Liska (2013).
 Adam Liska (2010). 
 *Charles University in Prague.*
 [[pdf](/downloads/publications/liska_2010.pdf)]
+[[code](https://github.com/adliska/parallel_text_cleaning)]
 [supervision: [Ondřej Bojar](http://www1.cuni.cz/~obo/)]
