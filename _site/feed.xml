@@ -5,9 +5,28 @@
     <description></description>
     <link>http://adliska.com/</link>
     <atom:link href="http://adliska.com/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Sun, 15 May 2016 15:10:24 +0200</pubDate>
-    <lastBuildDate>Sun, 15 May 2016 15:10:24 +0200</lastBuildDate>
+    <pubDate>Sun, 15 May 2016 18:39:22 +0200</pubDate>
+    <lastBuildDate>Sun, 15 May 2016 18:39:22 +0200</lastBuildDate>
     <generator>Jekyll v3.0.1</generator>
+    
+      <item>
+        <title>Multi-arm bandits and the conflict between exploration and exploitation</title>
+        <description>&lt;p&gt;We have recently started a reading group on &lt;a href=&quot;https://en.wikipedia.org/wiki/Reinforcement_learning&quot;&gt;reinforcement 
+learning&lt;/a&gt; with
+a group of colleagues, following the draft of the second edition 
+of &lt;a href=&quot;https://webdocs.cs.ualberta.ca/~sutton/book/the-book.html&quot;&gt;Reinforcement Learning: An 
+Introduction&lt;/a&gt; 
+by Sutton and Barto. The PDF version of the book is available on 
+the book website; we are using the draft from October 2015 
+(currently the latest one).&lt;/p&gt;
+
+</description>
+        <pubDate>Sun, 15 May 2016 00:00:00 +0200</pubDate>
+        <link>http://adliska.com/2016/05/15/reinforcement-learning-sutton-barto-chapter-2-multi-arm-bandits-exploration-exploitation-code.html</link>
+        <guid isPermaLink="true">http://adliska.com/2016/05/15/reinforcement-learning-sutton-barto-chapter-2-multi-arm-bandits-exploration-exploitation-code.html</guid>
+        
+        
+      </item>
     
       <item>
         <title>How to download Human Connectome Project data from Amazon Web Services</title>
