@@ -24,8 +24,24 @@ Adam Liska,
 [[abstract](http://arxiv.org/abs/1501.02714)]
 [[pdf](http://aclweb.org/anthology/Q/Q15/Q15-1014.pdf)]
 
+Pre-prints
+----
+**Homozygous loss of autism-risk gene CNTNAP2 results in reduced local 
+and long-range prefrontal functional connectivity.**
+Adam Liska, Ryszard Gomolka, Mara Sabbioni, Alberto Galbusera,
+Stefano Panzeri, Maria Luisa Scattoni, Alessandro Gozzi (2016).
+[[bioRxiv](http://biorxiv.org/content/early/2016/06/29/060335)]
+
 Conferences
 ----
+
+**Default-Mode Network Hypo-Connectivity In a Mouse Model of Human Chromosome
+16p11.2 Microdeletion.**
+Alice Bertero, Gergely David, Adam Liska, Alberto Galbusera,
+Massimo Pasqualetti, Alessandro Gozzi (2016).
+*24th Annual Meeting and Exhibition of the International Society for 
+Magnetic Resonance in Medicine (ISMRM 2016).*
+Singapore.
 
 **Prefrontal hypo-connectivity in the 16p11.2 microdeletion autism model.**
 Alice Bertero, Gergely David, Adam Liska, Alberto Galbusera,
