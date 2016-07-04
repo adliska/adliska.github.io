@@ -42,6 +42,7 @@ Massimo Pasqualetti, Alessandro Gozzi (2016).
 *24th Annual Meeting and Exhibition of the International Society for 
 Magnetic Resonance in Medicine (ISMRM 2016).*
 Singapore.
+[[abstract](http://indexsmart.mirasmart.com/ISMRM2016/PDFfiles/1031.html)]
 
 **Prefrontal hypo-connectivity in the 16p11.2 microdeletion autism model.**
 Alice Bertero, Gergely David, Adam Liska, Alberto Galbusera,
