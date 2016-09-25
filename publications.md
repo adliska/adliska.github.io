@@ -75,6 +75,12 @@ Magnetic Resonance in Medicine (ISMRM 2015).*
 Toronto, Canada.
 [[pdf](/downloads/publications/pagani_etal_2015_ismrm.pdf)]
 
+**Functional connectivity hubs of the mouse brain.**
+Adam Liska, Alberto Galbusera, Adam J. Schwarz, Alessandro Gozzi (2015). 
+*Annual Meeting of the Italian Chapter of the International Society for 
+Magnetic Resonance in Medicine.*
+Verona, Italy.
+
 **Mapping large-scale connectivity networks of the mouse brain with fMRI.**
 Adam Liska, Francesco Sforazzini, Luca Dodero, Alberto Galbusera, 
 Angelo Bifone, Adam J Schwarz, Alessandro Gozzi (2014).
