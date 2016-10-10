@@ -5,9 +5,14 @@ permalink: /publications/
 ---
 Journals
 --------
+**Can mouse imaging studies bring order to autism connectivity chaos?**
+Adam Liska and Alessandro Gozzi (2016).
+*Frontiers in Neuroscience.*
+[[Frontiers](http://journal.frontiersin.org/article/10.3389/fnins.2016.00484/abstract)]
+
 **Functional connectivity hubs of the mouse brain.**
 Adam Liska, Alberto Galbusera, Adam J. Schwarz, Alessandro Gozzi (2015).
-*NeuroImage*.
+*NeuroImage.*
 [[pdf](/downloads/publications/liska_etal_2015.pdf)]
 [[slides](/downloads/presentations/liska_ismrm2015_presentation.pdf)]
 [[poster](/downloads/posters/liska_etal_2015_mfc_hubs_poster.pdf)]
