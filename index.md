@@ -3,10 +3,10 @@ layout: default
 ---
 
 <h2>About me</h2>
-<img src="images/adam_liska_photo.JPG" style="float: right; width: 30%">
+<img src="images/IMG_0095.JPG" style="float: right; width: 30%">
 I'm Adam Liska, a graduate student at the [Functional Neuroimaging
-Lab](http://cncs.iit.it/research-labs/mri.html) of the Center for Neuroscience and
-Cognitive Systems (Istituto Italiano di Tecnologia) in 
+Lab](https://www.iit.it/research/lines/functional-neuroimaging) of the Center 
+for Neuroscience and Cognitive Systems (Istituto Italiano di Tecnologia) in 
 Rovereto, Italy 
 ([map](https://www.google.com/maps/place/Roveret://www.google.com/maps/place/38068+Rovereto+TN,+It%C3%A1lie/@47.2603133,11.7074777,5z/data=!4m2!3m1!1s0x47820ec143127041:0x6a9664123aebfadf)).
 
@@ -17,13 +17,20 @@ disorder](https://en.wikipedia.org/wiki/Autism_spectrum)
 and in mouse models with autism-associated genetic mutations 
 (see [publications](/publications)).
 
-I work under the supervision of [Alessandro Gozzi](http://cncs.iit.it/people/iit-unitn/researcher/alessandro-gozzi.html).
+I work under the supervision of [Alessandro Gozzi](https://www.iit.it/alessandro-gozzi).
 
 I did my BSc in Computer Science at Charles University in Prague working on
 machine translation, and my MSc in Computer/Cognitive Science at 
 The University of Melbourne/University of Trento 
 working on computer vision, distributional semantics and 
 machine learning (see [theses](/publications/#theses)).
+
+<h2>News</h2>
+<ul>
+{% for newsitem in site.news reversed limit:5 %}
+    <li>{{ newsitem.date | date: "%b %Y" }} {{ newsitem.content }}</li>
+{% endfor %}
+</ul>
 
 <h2>Recent posts</h2>
 <ul class="post-list">

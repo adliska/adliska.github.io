@@ -17,3 +17,6 @@ scholar:
     style: frontiers
     bibliography_template: mybiblio
     sort_by: name
+
+collections:
+ - news
