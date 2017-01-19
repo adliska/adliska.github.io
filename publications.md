@@ -5,6 +5,15 @@ permalink: /publications/
 ---
 Journals
 --------
+**Homozygous loss of autism-risk gene CNTNAP2 results in reduced local 
+and long-range prefrontal functional connectivity.**
+Adam Liska, Alice Bertero, Ryszard Gomolka, Mara Sabbioni, 
+Alberto Galbusera, Noemi Barsotti, Stefano Panzeri, Maria Luisa Scattoni, 
+Massimo Pasqualetti, Alessandro Gozzi (2017).
+*Cerebral Cortex.*
+[pdf]
+[[preprint](http://biorxiv.org/content/early/2017/01/18/060335)]
+
 **Can mouse imaging studies bring order to autism connectivity chaos?**
 Adam Liska and Alessandro Gozzi (2016).
 *Frontiers in Neuroscience.*
@@ -27,19 +36,16 @@ distributional semantics.**
 Adam Liska,
 [Marco Baroni](http://clic.cimec.unitn.it/marco/) (2015).
 *Transactions of the Association for Computational Linguistics.*
-[[abstract](http://arxiv.org/abs/1501.02714)]
 [[pdf](http://aclweb.org/anthology/Q/Q15/Q15-1014.pdf)]
+[[preprint](http://arxiv.org/abs/1501.02714)]
 
-Pre-prints
-----
-**Homozygous loss of autism-risk gene CNTNAP2 results in reduced local 
-and long-range prefrontal functional connectivity.**
-Adam Liska, Ryszard Gomolka, Mara Sabbioni, Alberto Galbusera,
-Stefano Panzeri, Maria Luisa Scattoni, Alessandro Gozzi (2016).
-[[bioRxiv](http://biorxiv.org/content/early/2016/06/29/060335)]
 
 Conferences
 ----
+**Relationship between static and dynamic brain functional connectivity in autism spectrum disorders.**
+Adam Liska, Hongyuan You, Payel Das (2017).
+*Keystone Symposia: Connectomics.*
+Santa Fe, NM, USA.
 
 **Default-Mode Network Hypo-Connectivity In a Mouse Model of Human Chromosome
 16p11.2 Microdeletion.**
