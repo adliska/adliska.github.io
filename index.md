@@ -15,15 +15,18 @@ currently focuses on how brain functional and structural networks are
 affected in people with [autism spectrum 
 disorder](https://en.wikipedia.org/wiki/Autism_spectrum)
 and in mouse models with autism-associated genetic mutations 
-(see [publications](/publications)).
+[see [publications](/publications)].
 
 I work under the supervision of [Alessandro Gozzi](https://www.iit.it/alessandro-gozzi).
 
 I did my BSc in Computer Science at Charles University in Prague working on
-machine translation, and my MSc in Computer/Cognitive Science at 
+machine translation with [Ondřej Bojar](http://www1.cuni.cz/~obo/),
+and my MSc in Computer/Cognitive Science at 
 The University of Melbourne/University of Trento 
 working on computer vision, distributional semantics and 
-machine learning (see [theses](/publications/#theses)).
+machine learning with [Marco Baroni](http://clic.cimec.unitn.it/marco/)
+and [Elia Bruni](http://clic.cimec.unitn.it/~elia.bruni/)
+[see [theses](/publications/#theses)].
 
 <h2>News</h2>
 <ul>

@@ -3,11 +3,11 @@
   <channel>
     <title>Adam Liska</title>
     <description></description>
-    <link>http://adliska.com/</link>
-    <atom:link href="http://adliska.com/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Sun, 29 Jan 2017 19:15:44 +0100</pubDate>
-    <lastBuildDate>Sun, 29 Jan 2017 19:15:44 +0100</lastBuildDate>
-    <generator>Jekyll v3.0.1</generator>
+    <link>http://localhost:4000/</link>
+    <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml" />
+    <pubDate>Sat, 04 Feb 2017 16:55:11 +0100</pubDate>
+    <lastBuildDate>Sat, 04 Feb 2017 16:55:11 +0100</lastBuildDate>
+    <generator>Jekyll v3.3.1</generator>
     
       <item>
         <title>Multi-arm bandits and the conflict between exploration and exploitation</title>
@@ -22,8 +22,8 @@ the book website; we are using the draft from October 2015
 
 </description>
         <pubDate>Sun, 15 May 2016 00:00:00 +0200</pubDate>
-        <link>http://adliska.com/2016/05/15/reinforcement-learning-sutton-barto-chapter-2-multi-arm-bandits-exploration-exploitation-code.html</link>
-        <guid isPermaLink="true">http://adliska.com/2016/05/15/reinforcement-learning-sutton-barto-chapter-2-multi-arm-bandits-exploration-exploitation-code.html</guid>
+        <link>http://localhost:4000/2016/05/15/reinforcement-learning-sutton-barto-chapter-2-multi-arm-bandits-exploration-exploitation-code.html</link>
+        <guid isPermaLink="true">http://localhost:4000/2016/05/15/reinforcement-learning-sutton-barto-chapter-2-multi-arm-bandits-exploration-exploitation-code.html</guid>
         
         
       </item>
@@ -39,8 +39,8 @@ Nevertheless, I’ve had trouble running the Aspera Connect browser plugin
 
 </description>
         <pubDate>Thu, 04 Feb 2016 00:00:00 +0100</pubDate>
-        <link>http://adliska.com/2016/02/04/how-to-download-human-connectome-project-data-from-amazon-web-services-aws.html</link>
-        <guid isPermaLink="true">http://adliska.com/2016/02/04/how-to-download-human-connectome-project-data-from-amazon-web-services-aws.html</guid>
+        <link>http://localhost:4000/2016/02/04/how-to-download-human-connectome-project-data-from-amazon-web-services-aws.html</link>
+        <guid isPermaLink="true">http://localhost:4000/2016/02/04/how-to-download-human-connectome-project-data-from-amazon-web-services-aws.html</guid>
         
         
       </item>
