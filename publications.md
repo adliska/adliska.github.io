@@ -11,7 +11,8 @@ Adam Liska, Alice Bertero, Ryszard Gomolka, Mara Sabbioni,
 Alberto Galbusera, Noemi Barsotti, Stefano Panzeri, Maria Luisa Scattoni, 
 Massimo Pasqualetti, Alessandro Gozzi (2017).
 *Cerebral Cortex.*
-[pdf]
+[[pdf](/downloads/publications/liska_etal_2017_cntnap2_connectivity.pdf)]
+[[Cerebral Cortex](https://academic.oup.com/cercor/article/2981933/Homozygous-Loss-of-Autism-Risk-Gene-CNTNAP2)]
 [[preprint](http://biorxiv.org/content/early/2017/01/18/060335)]
 
 **Can mouse imaging studies bring order to autism connectivity chaos?**
