@@ -3,7 +3,7 @@ layout: default
 ---
 
 <h2>About me</h2>
-<img src="images/IMG_0095.JPG" style="float: right; width: 30%">
+<img src="images/IMG_0095.JPG" style="float: right; width: 30%" alt="picture of me">
 I'm Adam Liska, a graduate student at the [Functional Neuroimaging
 Lab](https://www.iit.it/research/lines/functional-neuroimaging) of the Center 
 for Neuroscience and Cognitive Systems (Istituto Italiano di Tecnologia) in 
@@ -30,10 +30,15 @@ and [Elia Bruni](http://clic.cimec.unitn.it/~elia.bruni/)
 
 <h2>News</h2>
 <ul>
-{% for newsitem in site.news reversed limit:5 %}
-    <li>{{ newsitem.date | date: "%b %Y" }} {{ newsitem.content }}</li>
+{% assign news_reversed = site.news | reverse %}
+{% for newsitem in news_reversed limit:5 %}
+    <li>
+        {{ newsitem.date | date: "%b %Y" }}
+        {{ newsitem.content }}
+    </li>
 {% endfor %}
 </ul>
+[Older news](/news)
 
 <h2>Recent posts</h2>
 <ul class="post-list">
