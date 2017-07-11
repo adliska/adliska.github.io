@@ -24,7 +24,7 @@ Adam Liska and Alessandro Gozzi (2016).
 **Functional connectivity hubs of the mouse brain.**
 Adam Liska, Alberto Galbusera, Adam J. Schwarz, Alessandro Gozzi (2015).
 *NeuroImage.*
-[[pdf](/downloads/publications/liska_etal_2015.pdf)]
+[[pdf](/downloads/publications/liska_etal_2015_functional_connectivity_hubs_mouse.pdf)]
 [[slides](/downloads/presentations/liska_ismrm2015_presentation.pdf)]
 [[poster](/downloads/posters/liska_etal_2015_mfc_hubs_poster.pdf)]
 [[code](/publications/notes/liska_etal_neuroimage_2015.html)]
