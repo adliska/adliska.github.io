@@ -4,41 +4,19 @@ layout: default
 
 <h2>About me</h2>
 <img src="images/IMG_0095.JPG" style="float: right; width: 30%" alt="picture of me">
-I'm Adam Liska, a graduate student at the [Functional Neuroimaging
-Lab](https://www.iit.it/research/lines/functional-neuroimaging) of the Center 
-for Neuroscience and Cognitive Systems (Istituto Italiano di Tecnologia) in 
-Rovereto, Italy 
-([map](https://www.google.com/maps/place/Roveret://www.google.com/maps/place/38068+Rovereto+TN,+It%C3%A1lie/@47.2603133,11.7074777,5z/data=!4m2!3m1!1s0x47820ec143127041:0x6a9664123aebfadf)).
+I'm a research engineer at Spotify in London.
 
-I'm interested in medical imaging and data analysis, and my research
-currently focuses on how brain functional and structural networks are 
-affected in people with [autism spectrum 
-disorder](https://en.wikipedia.org/wiki/Autism_spectrum)
-and in mouse models with autism-associated genetic mutations 
-[see [publications](/publications)].
-
-I work under the supervision of [Alessandro Gozzi](https://www.iit.it/alessandro-gozzi).
-
+Previously, I was a graduate student at the [Functional Neuroimaging
+Lab](https://www.iit.it/research/lines/functional-neuroimaging) of
+Istituto Italiano di Tecnologia in Rovereto, Italy, working with [Alessandro Gozzi](https://www.iit.it/people/alessandro-gozzi).
 I did my BSc in Computer Science at Charles University in Prague working on
 machine translation with [Ondřej Bojar](http://www1.cuni.cz/~obo/),
-and my MSc in Computer/Cognitive Science at 
-The University of Melbourne/University of Trento 
-working on computer vision, distributional semantics and 
+and my MSc in Computer and Cognitive Science at
+The University of Melbourne and University of Trento
+working on computer vision, distributional semantics and
 machine learning with [Marco Baroni](http://clic.cimec.unitn.it/marco/)
-and [Elia Bruni](http://clic.cimec.unitn.it/~elia.bruni/)
-[see [theses](/publications/#theses)].
-
-<h2>News</h2>
-<ul>
-{% assign news_reversed = site.news | reverse %}
-{% for newsitem in news_reversed limit:5 %}
-    <li>
-        {{ newsitem.date | date: "%b %Y" }}
-        {{ newsitem.content }}
-    </li>
-{% endfor %}
-</ul>
-[Older news](/news)
+and [Elia Bruni](https://eliabruni.github.io/).
+All my theses are [here](/publications/#theses).
 
 <h2>Recent posts</h2>
 <ul class="post-list">

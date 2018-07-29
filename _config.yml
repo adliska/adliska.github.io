@@ -2,12 +2,12 @@
 title: Adam Liska
 email: ""
 description: ""
-baseurl: "" 
+baseurl: ""
 url: "http://adliska.com"
 twitter_username: adliska
 github_username:  adliska
 
-gems: ['jekyll/scholar']
+plugins: ['jekyll/scholar']
 
 # Build settings
 markdown: kramdown
