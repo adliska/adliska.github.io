@@ -3,10 +3,20 @@ layout: page
 title: Publications
 permalink: /publications/
 ---
+
+[My Google Scholar profile](https://scholar.google.com/citations?user=NHOkhqMAAAAJ)
+
 Papers
 --------
+**Deletion of Autism Risk Gene Shank3 Disrupts Prefrontal Connectivity.**
+Marco Pagani, Alice Bertero, Adam Liska, Alberto Galbusera, Mara Sabbioni,
+Noemi Barsotti, Nigel Colenbier, Daniele Marinazzo, Maria Luisa Scattoni,
+Massimo Pasqualetti, and Alessandro Gozzi (2019).
+[*Journal of Neuroscience*](https://www.jneurosci.org/content/39/27/5299).
+[[pdf](/downloads/publications/pagani_et_al_2019_shank3.pdf)]
+
 **Autism-associated 16p11.2 microdeletion impairs prefrontal functional
-connectivity in mouse and human**
+connectivity in mouse and human.**
 Alice Bertero\*, Adam Liska\*, Marco Pagani\*, Roberta Parolisi, Maria Esteban Masferrer,
 Marta Gritti, Matteo Pedrazzoli, Alberto Galbusera, Alessia Sarica,
 Antonio Cerasa, Mario Buffelli, Raffaella Tonini, Annalisa Buffo,
@@ -14,7 +24,7 @@ Cornelius Gross, Massimo Pasqualetti, Alessandro Gozzi (2018).
 [*Brain*](https://academic.oup.com/brain/article-abstract/141/7/2055/4989322).
 [[pdf](/downloads/publications/bertero_liska_pagani_et_al_2018_brain.pdf)]
 
-**Memorize or generalize? Searching for a compositional RNN in a haystack**
+**Memorize or generalize? Searching for a compositional RNN in a haystack.**
 Adam Liška, Germán Kruszewski, Marco Baroni (2018).
 *AEGAP Workshop, ICML*.
 [[pdf](/downloads/publications/liska_et_al_2018_memorize_generalize.pdf)]
