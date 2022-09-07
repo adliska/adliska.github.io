@@ -5,9 +5,9 @@
     <description></description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Mon, 13 Apr 2020 20:24:59 +0100</pubDate>
-    <lastBuildDate>Mon, 13 Apr 2020 20:24:59 +0100</lastBuildDate>
-    <generator>Jekyll v3.8.3</generator>
+    <pubDate>Wed, 07 Sep 2022 19:59:51 +0100</pubDate>
+    <lastBuildDate>Wed, 07 Sep 2022 19:59:51 +0100</lastBuildDate>
+    <generator>Jekyll v4.2.2</generator>
     
       <item>
         <title>Multi-arm bandits and the conflict between exploration and exploitation</title>
@@ -19,7 +19,6 @@ Introduction&lt;/a&gt;
 by Sutton and Barto. The PDF version of the book is available on 
 the book website; we are using the draft from October 2015 
 (currently the latest one).&lt;/p&gt;
-
 </description>
         <pubDate>Sun, 15 May 2016 00:00:00 +0100</pubDate>
         <link>http://localhost:4000/2016/05/15/reinforcement-learning-sutton-barto-chapter-2-multi-arm-bandits-exploration-exploitation-code.html</link>
@@ -36,7 +35,6 @@ available online through the &lt;a href=&quot;https://db.humanconnectome.org&quo
 Nevertheless, I’ve had trouble running the Aspera Connect browser plugin 
 – that’s required to download data from the database – on my Ubuntu machine
 (it crashes whenever I want to initiate a download).&lt;/p&gt;
-
 </description>
         <pubDate>Thu, 04 Feb 2016 00:00:00 +0000</pubDate>
         <link>http://localhost:4000/2016/02/04/how-to-download-human-connectome-project-data-from-amazon-web-services-aws.html</link>
