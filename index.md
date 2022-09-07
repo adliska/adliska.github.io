@@ -4,10 +4,13 @@ layout: default
 
 <h2>About me</h2>
 <img src="images/adliska.jpg" style="float: right; width: 30%" alt="Adam Liska - photo">
-I'm a research engineer at DeepMind in London.
+I'm a co-founder and CEO of [Glyphic AI](https://www.glyphic.ai/). 
 
-Previously, I was a research engineer at Spotify, working on machine learning
-products that enrich Spotify's audio catalog.
+Our mission at Glyphic is to make finding, creating, and sharing enterprise information as easy as possible. And -- we are [hiring](https://glyphic-ai.rocket.hr/)!
+
+Previously, I was a research engineer at DeepMind, focusing on machine learning
+and natural language processing, and at Spotify, where I built machine 
+learning products that enrich Spotify's audio catalog.
 
 I completed my PhD in Brain and Cognitive Sciences at the [Functional Neuroimaging
 Lab](https://www.iit.it/research/lines/functional-neuroimaging)

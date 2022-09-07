@@ -8,6 +8,26 @@ permalink: /publications/
 
 Papers
 --------
+**StreamingQA: A Benchmark for Adaptation to New Knowledge over Time in Question Answering Models.**
+Adam Liska, Tomas Kocisky, Elena Gribovskaya, Tayfun Terzi, Eren Sezener,
+Devang Agrawal, Cyprien De Masson D’Autume, Tim Scholtes, Manzil Zaheer,
+Susannah Young, Ellen Gilsenan-Mcmahon, Sophia Austin, Phil Blunsom, and 
+Angeliki Lazaridou (2022).
+[*Proceedings of the 39th International Conference on Machine Learning*](https://proceedings.mlr.press/v162/liska22a.html).
+[[pdf](https://proceedings.mlr.press/v162/liska22a/liska22a.pdf)]
+[[supporting site](https://github.com/deepmind/streamingqa)]
+
+**Mind the Gap: Assessing Temporal Generalization in Neural Language Models.**
+Angeliki Lazaridou, Adhi Kuncoro, Elena Gribovskaya, Devang Agrawal, Adam Liska, Tayfun Terzi, Mai Gimenez, Cyprien de Masson d'Autume, Tomas Kocisky, Sebastian Ruder, Dani Yogatama, Kris Cao, Susannah Young, and Phil Blunsom (2021).
+[*Advances in Neural Information Processing Systems 34 (NeurIPS 2021)*](https://proceedings.neurips.cc/paper/2021/hash/f5bf0ba0a17ef18f9607774722f5698c-Abstract.html).
+[[pdf](https://proceedings.neurips.cc/paper/2021/file/f5bf0ba0a17ef18f9607774722f5698c-Paper.pdf)]
+[[supplemental](https://proceedings.neurips.cc/paper/2021/file/f5bf0ba0a17ef18f9607774722f5698c-Supplemental.pdf)]
+[[supporting site](https://github.com/deepmind/deepmind-research/tree/master/pitfalls_static_language_models)]
+
+**Regional, Layer, and Cell-Type-Specific Connectivity of the Mouse Default Mode Network.**
+Jennifer D. Whitesell, Adam Liska, Ludovico Coletta, Karla E. Hirokawa, Phillip Bohn, Ali Williford, Peter A.Groblewski, Nile Graddis, Leonard Kuan, Joseph E. Knox, Anh Ho, Wayne Wakeman, Philip R. Nicovich, Thuc Nghi Nguyen, Cindy T. J. van Velthoven, Emma Garren, Olivia Fong, Maitham Naeemi, Alex M. Henry, Nick Dee, Kimberly A. Smith, Boaz Levi, David Feng, Lydia Ng, Bosiljka Tasic, Hongkui Zeng, Stefan Mihalas, Alessandro Gozzi, and Julie A. Harris (2021).
+[*Neuron*](https://www.sciencedirect.com/science/article/pii/S0896627320308898).
+
 **Deletion of Autism Risk Gene Shank3 Disrupts Prefrontal Connectivity.**
 Marco Pagani, Alice Bertero, Adam Liska, Alberto Galbusera, Mara Sabbioni,
 Noemi Barsotti, Nigel Colenbier, Daniele Marinazzo, Maria Luisa Scattoni,
