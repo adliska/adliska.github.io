@@ -4,9 +4,9 @@ layout: default
 
 <h2>About me</h2>
 <img src="images/adliska.jpg" style="float: right; width: 30%" alt="Adam Liska - photo">
-I'm a co-founder and CEO of [Glyphic AI](https://www.glyphic.ai/). 
+I'm a co-founder and CEO of [Airspeed](https://goairspeed.com/) (formerly Glyphic). We're building the system of execution for revenue teams — connecting the full GTM stack and running autonomous agents that act on it.
 
-Our mission at Glyphic is to make finding, creating, and sharing enterprise information as easy as possible. And -- we are [hiring](https://glyphic-ai.rocket.hr/)!
+More broadly, I'm interested in how companies can be run more efficiently and how humans and AI can work together well.
 
 Previously, I was a research engineer at DeepMind, focusing on machine learning
 and natural language processing, and at Spotify, where I built machine 
