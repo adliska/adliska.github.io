@@ -7,16 +7,8 @@ url: "http://adliska.com"
 twitter_username: adliska
 github_username:  adliska
 
-plugins: ['jekyll/scholar']
-
 # Build settings
 markdown: kramdown
-
-scholar:
-    bibliography: adliska.bib
-    style: frontiers
-    bibliography_template: mybiblio
-    sort_by: name
 
 collections:
  - news
